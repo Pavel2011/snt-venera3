@@ -1,0 +1,70 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900'); */
+@import url('https://fonts.googleapis.com/css?family=Anton');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap'); /*Lui Vuiton*/
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap'); /*mersedes*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
+/* *{
+  height: 100vh;
+} */
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+main{
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+h3{
+  font-size: 1.8rem;
+  padding: 1.5rem;
+}
+.contacts-list{
+  margin-left: 1.5rem;
+  padding: 1.5rem;
+}
+
+.contacts-list li{
+  padding: 1.0rem;
+  font-size: 1.4rem;
+}
+span{
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+
+
+.footer{
+  position: fixed;
+  top: 96vh;
+  bottom: 0;
+  height: auto;
+ 
+}
+@media (max-width:26rem) {
+ 
+ .footer{
+   position: relative;
+   /* top: 1.5vh; */
+   margin-top: 12rem;
+   flex-wrap: wrap;
+   height: auto;
+ }
+
+
+
+
+  /* Mobile Navigation */
+
+
+
+  
+}

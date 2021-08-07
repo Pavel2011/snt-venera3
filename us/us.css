@@ -1,0 +1,67 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900'); */
+@import url('https://fonts.googleapis.com/css?family=Anton');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap'); /*Lui Vuiton*/
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap'); /*mersedes*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
+/* *{
+  height: 100vh;
+} */
+body{
+  position: relative;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+main{
+  position: relative;
+  top: 7rem;
+  /* height: auto; */
+  left: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+.we-are{
+  font-size: 1.8rem;
+  padding: 1.5rem;
+}
+.cstm-list__title{
+  margin-left: 2.5rem;
+}
+.co-business ul{
+  margin-left: 1.5rem;
+padding: 1.5rem;
+}
+.co-business ul li{
+  padding: 1.0rem;
+}
+span{
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.customer-list{
+  font-size: 1.3rem;
+}
+
+
+.footer{
+  top: 125rem;
+  position: absolute;
+
+
+  height: 3rem;
+}
+@media (max-width:26rem) {
+  .footer{
+    top: 230rem;
+    /* bottom: 0; */
+    margin: 0;
+    padding: 0;
+    position: absolute;    
+    height: auto;
+  }
+  
+}

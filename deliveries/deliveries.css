@@ -11,13 +11,21 @@
   height: 100vh;
 } */
 body{
-  background-color: white;
+  background-color: rgb(246, 244, 244);
   margin: 0;
   padding: 0;
   height: 100vh;
 }
+.main-nav__items li:nth-child(4) {
+  background-color: rgb(107, 101, 101);
+
+}
+.main-nav__items li:nth-child(1) {
+  background-color: black;
+}
+
 main{
-  position: absolute;
+  position: relative;
   top: 10rem;
   left: 0;
   font-family: 'Times New Roman', Times, serif;
@@ -28,7 +36,8 @@ h3{
 }
 .contacts-list{
   margin-left: 1.5rem;
-  padding: 1.5rem;
+  padding: 0.5rem;
+  list-style-type: none;
 }
 
 .contacts-list li{
@@ -39,17 +48,88 @@ span{
   font-size: 1.4rem;
   font-weight: 700;
 }
+.delivery-tariff-list h3{
+  width: 100%;
+  text-align: center;
+}
 
+.t1, table, th, td{
+  border:0.2rem solid olive;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 0.3rem;
+  font-size: 1.4rem;
+  background-color: rgb(216, 250, 182);
+}
+.t1{
+  width: 50vw;
+  height: auto;
+  padding: 2rem;
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
+ 
+}
+caption{
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: rgb(216, 250, 182);
+}
+.delivery-moscow{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.d-moscow__img img{
+  width:auto;
+  height: 45rem;
+  padding: 2rem;
+}
+.d-moscow__img2 img{
+  width:auto;
+  height: 37rem;
+  padding: 2rem;
+}
+.d-moscow__img2 h3{
+  text-align: center;
+}
+.d-zone-list{
+  width: 100vw;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.d-zone-list table.t1{
+  text-align: center;
+  width: 90vw;
+}
+.d-last h4{
+  padding: 2rem;
+  font-weight: 200;
+  font-size: 1.2rem;
+
+}
 
 
 .footer{
-  position: fixed;
-  top: 96vh;
+  /* position: ; */
+  /* top: 175rem; */
   bottom: 0;
-  height: auto;
+  height: 3rem;
  
 }
 @media (max-width:26rem) {
+  .mobile-nav__items li:nth-child(4) {
+    background-color: rgb(107, 101, 101);
+    width: 100%;  
+    text-align: center;
+  }
+  .mobile-nav__items li:nth-child(1) {
+    background-color: turquoise;
+  }
  
  .footer{
    position: relative;

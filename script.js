@@ -26,3 +26,17 @@ function toggleMenu(){
 mobileMenu.addEventListener('click',toggleMenu);
 mobCloseMenuBtn.addEventListener('click',closeMobMenu);
 backdrop.addEventListener('click',backdropClose);
+// ================local Storage===
+
+const posList=document.querySelector('.pos-list')
+console.log(posList);
+const position = document.querySelectorAll('.pos')[3];
+console.log(position);
+// const positionText=position.innerHTML='Medium';
+let li=document.createElement('li');
+li.classList.add('position');
+
+localStorage.setItem('position','Medium');
+
+
+// let liText=JSON.parse(localStorage.getItem('position'));

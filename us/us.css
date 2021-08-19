@@ -12,14 +12,37 @@
 } */
 body{
   position: relative;
-  background-color: white;
+  background-color:black;
   margin: 0;
   padding: 0;
   height: 100vh;
 }
+.header-section{
+  padding-bottom: 2rem;
+}
+.main-nav__items li:nth-child(2) {
+  background-color: rgb(107, 101, 101);
+
+}
+.main-nav__items li:nth-child(1) {
+  background-color: black;
+}
+.mobile-nav__items li:nth-child(2) {
+  background-color: rgb(107, 101, 101);
+width: 100%;
+text-align: center;
+}
+/*   background-color: turquoise; */
+.mobile-nav__items li:nth-child(1) {
+  background-color: turquoise;
+width: 100%;
+text-align: center;
+}
 main{
   position: relative;
-  top: 7rem;
+  background-color: white;
+  top: 11rem;
+
   /* height: auto; */
   left: 0;
   font-family: 'Times New Roman', Times, serif;
@@ -45,10 +68,21 @@ span{
 .customer-list{
   font-size: 1.3rem;
 }
+/*v-ton section in US*/
+.vton-section {
+  position: relative;
+  top: 1rem;
+  margin-top: 0%;
+
+}
+
+
+/*End of V-section in US*/
+
 
 
 .footer{
-  top: 125rem;
+  top: 115rem;
   position: absolute;
 
 

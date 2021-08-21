@@ -31,7 +31,7 @@ main{
   font-family: 'Times New Roman', Times, serif;
 }
 h3{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 1.5rem;
 }
 .contacts-list{
@@ -48,6 +48,7 @@ span{
   font-size: 1.4rem;
   font-weight: 700;
 }
+/* mos+region 2tab+2map */
 .delivery-tariff-list h3{
   width: 100%;
   text-align: center;
@@ -58,7 +59,7 @@ span{
   border-collapse: collapse;
   text-align: center;
   padding: 0.3rem;
-  font-size: 1.4rem;
+  font-size: 1.0rem;
   background-color: rgb(216, 250, 182);
 }
 .t1{
@@ -70,30 +71,45 @@ span{
  
 }
 caption{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  background-color: rgb(216, 250, 182);
+  background-color: rgb(246, 244, 244);
+  padding-bottom: 2.5rem;
 }
 .delivery-moscow{
   width: 100vw;
+  padding: 2rem;
   height: fit-content;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 .d-moscow__img img{
   width:auto;
-  height: 45rem;
+  height: 30rem;
   padding: 2rem;
 }
-.d-moscow__img2 img{
-  width:auto;
-  height: 37rem;
-  padding: 2rem;
+
+.delivery-mosregion{
+  width: 100vw;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .d-moscow__img2 h3{
   text-align: center;
+  padding-bottom: 6rem;
+}
+.d-moscow__img2 img{
+  width:auto;
+  height: 25rem;
+  padding: 1rem;
+  object-fit: contain;
 }
 .d-zone-list{
   width: 100vw;

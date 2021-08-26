@@ -42,13 +42,34 @@ padding: 1.5rem;
 }
 .co-business ul li{
   padding: 1.0rem;
+  list-style-type: none;
+  margin-left:0px;
+  padding-left:0px;
+  /* float: left; */
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
+
+.customer-list{
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+
+li.customer-list img{
+  /* width: 3.2%; */
+height: 2.4rem;
+  margin: 0;
+  padding-right: 0;
+}
+.customer-list h6{
+  padding-left: 1rem;
+ text-align: right;
+}
+
 span{
   font-size: 1.4rem;
   font-weight: 700;
-}
-.customer-list{
-  font-size: 1.3rem;
 }
 
 

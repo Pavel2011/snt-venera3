@@ -20,7 +20,7 @@ body{
 .header-section{
   padding-bottom: 2rem;
 }
-.main-nav__items li:nth-child(2) {
+.main-nav__items li:nth-child(3) {
   background-color: rgb(107, 101, 101);
 
 }
@@ -47,11 +47,58 @@ main{
   left: 0;
   font-family: 'Times New Roman', Times, serif;
 }
-.we-are{
-  font-size: 1.8rem;
+/* Cooks image  start*/
+.cooks {
+  /* width: 100vw; */
+  height: 38rem;
+  background-color: black;
+  margin-top: 0rem;
+  /* display: block; */
+}
+.cooks img {
+  /* width: 43.3rem;
+  height: 23rem; */
+  /* height: auto;
+  width: 35vw; */
+  width: 100%;
+  height: 35rem;
+  margin: 0;
+  object-fit: cover;
+  /* border: 3px strong rgb(179, 132, 132); */
+  zoom: 102%;
+}
+/* Cooks image end */
+.we-are, .we-are span{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* display: block;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+  font-size: 1.2rem;
   padding: 1.5rem;
 }
-.cstm-list__title{
+/* Prod Group-List start */
+.food-group{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.food-group_img{
+  width: 50vw;
+
+}
+.food-group_img img{
+  width: 90%;
+  object-fit: cover;
+}
+
+
+/* Prod Group-List end */
+
+/* .cstm-list__title{
   margin-left: 2.5rem;
 }
 .co-business ul{
@@ -67,7 +114,7 @@ span{
 }
 .customer-list{
   font-size: 1.3rem;
-}
+} */
 /*v-ton section in US*/
 .vton-section {
   position: relative;
@@ -82,7 +129,7 @@ span{
 
 
 .footer{
-  top: 115rem;
+  top: 145rem;
   position: absolute;
 
 

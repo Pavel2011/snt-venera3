@@ -7,15 +7,17 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
-/* *{
-  height: 100vh;
-} */
+html{
+  height: auto;
+}
 body{
-  position: relative;
-  background-color:black;
+  /* position: relative; */
+  background-color:cornsilk;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  margin-top: 9rem;
+  font-size: 1.4rem;
+  /* height: 100vh; */
 }
 .header-section{
   padding-bottom: 2rem;
@@ -38,33 +40,34 @@ text-align: center;
 width: 100%;
 text-align: center;
 }
-main{
-  position: relative;
-  background-color: white;
-  top: 9rem;/*change 01.09.2021...10:26*/
-
-  /* height: auto; */
+.co-business{
+  /* position: relative; */
+  background-color:cornsilk;
+  /* top: 17rem; */
   left: 0;
   font-family: 'Times New Roman', Times, serif;
 }
 /* Cooks image  start*/
+.co-business{
+  top: 17rem;
+}
 .cooks {
-  /* width: 100vw; */
-  height: 38rem;
+  width: 100vw;
+  /* top: 17rem; */
+  height:68rem;
   background-color: black;
   margin-top: 0rem;
-  /* display: block; */
+  text-align: center;
+
 }
 .cooks img {
-  /* width: 43.3rem;
-  height: 23rem; */
-  /* height: auto;
-  width: 35vw; */
-  width: 100%;
-  height: 35rem;
+
+  width: 95%;
+  height: 65rem;
   margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
   object-fit: cover;
-  /* border: 3px strong rgb(179, 132, 132); */
   zoom: 102%;
 }
 /* Cooks image end */
@@ -76,8 +79,13 @@ main{
   justify-content: center;
   align-items: center; */
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding: 1.5rem;
+}
+.food-groups{
+  width: 100vw;
+  height: auto;
+  position: relative;
 }
 /* Prod Group-List start */
 .food-group{
@@ -88,40 +96,30 @@ main{
 }
 .food-group_img{
   width: 50vw;
-
+height: 20rem;
 }
 .food-group_img img{
+  height: 19rem;
   width: 90%;
   object-fit: cover;
 }
-
-
+.food-group h4,p{
+  padding: 1rem;
+  
+}
+.food-law{
+  margin: 1rem;
+}
+.food-law ol{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin:1rem 1rem 1rem 1rem;
+}
+.food-law span{
+  font-weight: bold;
+}
 /* Prod Group-List end */
 
-/* .cstm-list__title{
-  margin-left: 2.5rem;
-}
-.co-business ul{
-  margin-left: 1.5rem;
-padding: 1.5rem;
-}
-.co-business ul li{
-  padding: 1.0rem;
-}
-span{
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-.customer-list{
-  font-size: 1.3rem;
-} */
-/*v-ton section in US*/
-.vton-section {
-  position: relative;
-  top: 1rem;
-  margin-top: 0%;
-
-}
 
 
 /*End of V-section in US*/
@@ -129,19 +127,15 @@ span{
 
 
 .footer{
-  top: 185rem;
-  position: absolute;
-
-
-  height: 3rem;
+  /* position: absolute; */
+bottom: 0;
+  height: 4rem;
+  flex-wrap: wrap;
 }
 @media (max-width:26rem) {
   .footer{
-    top: 230rem;
-    /* bottom: 0; */
     margin: 0;
     padding: 0;
-    position: absolute;    
     height: auto;
   }
   

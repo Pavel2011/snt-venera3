@@ -217,9 +217,9 @@ text-align: center;
 }
 /* ==FIRST SECTION====== */
 .first-section {
-  position: relative;
+/*   position: static; */
   font-family: 'Oswald', sans-serif;
-  top: 7rem;
+/*   top: 7rem; */
   left: 0;
   /* margin-top: 30rem; */
   width: 99vw;

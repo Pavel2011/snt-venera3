@@ -54,7 +54,7 @@ text-align: center;
 .cooks {
   width: 100vw;
   /* top: 17rem; */
-  height:68rem;
+  height:42rem;
   background-color: black;
   margin-top: 0rem;
   text-align: center;
@@ -63,7 +63,7 @@ text-align: center;
 .cooks img {
 
   width: 95%;
-  height: 65rem;
+  height: 41rem;
   margin: 0;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -86,13 +86,19 @@ text-align: center;
   width: 100vw;
   height: auto;
   position: relative;
+  text-align: center;
+}
+.food-groups h3{
+  margin-bottom: 2rem;
+
 }
 /* Prod Group-List start */
 .food-group{
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+
 }
 .food-group_img{
   width: 50vw;
@@ -100,7 +106,7 @@ height: 20rem;
 }
 .food-group_img img{
   height: 19rem;
-  width: 90%;
+  width: 30rem;
   object-fit: cover;
 }
 .food-group h4,p{

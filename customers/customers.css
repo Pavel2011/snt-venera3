@@ -7,14 +7,12 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
-/* *{
-  height: 100vh;
-} */
+
 body{
-  background-color: white;
+  background-color:cornsilk;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .main-nav__items li:nth-child(2) {
   background-color: rgb(107, 101, 101);
@@ -23,11 +21,26 @@ body{
 .main-nav__items li:nth-child(1) {
   background-color: black;
 }
-main{
-  position: relative;
-  top: 7rem;
-  left: 0;
+/* flag section start */
+.RF_flag_and_logo{
+  /* position: relative;
+  top: 7rem; */
+  margin-top: 7rem;
+width: 90vw;
+height: 10rem;
+text-align: center;
+}
+.RF_flag_and_logo img{
+  width: 70%;
+}
+/* flag section start */
+.co-business{
+  /* position: relative; */
+  /* top: 0rem; */
+  margin-top: 36rem;
+  margin-left: 10rem;
   font-family: 'Times New Roman', Times, serif;
+  /* text-align: center; */
 }
 .we-are{
   font-size: 1.8rem;
@@ -39,6 +52,7 @@ main{
 .co-business ul{
   margin-left: 1.5rem;
 padding: 1.5rem;
+
 }
 .co-business ul li{
   padding: 1.0rem;
@@ -74,10 +88,11 @@ span{
 
 
 .footer{
-  position: absolute;
-  top:110rem;
+  /* position: absolute;
+  top:114rem; */
+  margin-top: 2rem;
   width: 100vw;
-  bottom: 0;
+  /* bottom: 0; */
   height: 3rem;
 }
 @media (max-width:26rem) {
@@ -88,6 +103,27 @@ span{
   }
   .mobile-nav__items li:nth-child(1) {
     background-color: turquoise;
+  }
+  .RF_flag_and_logo{
+    margin-top: 6rem;
+    width: 100vw;
+  }
+  .co-business{
+    margin-left: 0;
+    margin-top: -1rem;
+  }
+  .co-business h2{
+ font-size: 1.1rem;
+  }
+  .customer-list{
+    margin-left: 0.2rem;
+    font-size: 0.7rem;
+  }
+  .customer-list h6{
+    padding-left: 0.2rem;
+  }
+  .customer-list span{
+    font-size: 0.7rem;
   }
   .footer{
     top: 195rem;

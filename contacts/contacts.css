@@ -33,6 +33,9 @@ h3{
   font-size: 1.8rem;
   padding: 1.5rem;
 }
+h4{
+  padding: 1.5rem;
+}
 .contacts-list{
   margin-left: 1.5rem;
   padding: 1.5rem;
@@ -50,12 +53,33 @@ span{
 
 
 .footer{
-  position: absolute;
-  top: 70rem;
+  position: relative;
+  top: 85rem;
   bottom: 0;
   height: 3rem;
  
 }
+.tooltip{
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 120px;
+  /* bottom: 3rem; */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: -10;
+}
+.tooltip :active,
+.tooltip :hover{
+  visibility: visible;
+}
+
 @media (max-width:26rem) {
   .mobile-nav__items li:nth-child(6) {
     background-color: rgb(107, 101, 101);

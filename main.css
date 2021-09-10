@@ -378,9 +378,14 @@ img:hover {
   padding: 3rem;
 } */
 .prod-row-art img {
-    width: 50rem;
-    height: 40rem;
+    width: 30rem;
+    height: 19rem;
     object-fit: contain;
+}
+
+.prod-row-art.office-location :hover,
+.prod-row-art.office-location :active{
+zoom: 170%;
 }
 .prod-row-art h2 {
   color: rgb(21, 22, 22);

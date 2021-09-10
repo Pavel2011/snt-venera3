@@ -55,8 +55,34 @@ span{
   font-weight: 700;
 }
 
+/*Form start*/
+form#cv-form{
+  width: 60rem;
+  height: 30rem;
+  background-color:cornsilk ;
+  margin-left: 1rem;
+}
+#cv-form input{
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.cv-file{
+  display: flex;
+  flex-direction: column;
 
-
+}
+.cv-file small {
+  opacity: 0.4;
+}
+.form-name,.form-text,
+.email-address{
+  width: 100%;
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.2rem;
+}
 .footer{
   position: absolute;
   top: 78rem;

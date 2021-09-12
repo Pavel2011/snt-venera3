@@ -29,11 +29,13 @@ main{
   position: relative;
   top: 10rem;
   left: 0;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: 'Open Sans', sans-serif;
 }
 h3{
   font-size: 1.8rem;
   padding: 1.5rem;
+  opacity: 0.7;
 }
 .pos-list{
   margin-left: 1.5rem;
@@ -48,8 +50,10 @@ h3{
   text-decoration: none;
 }
 .pos-list li a{
-
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
+  color: black;
+  opacity: 0.8;
 }
 
 span{
@@ -60,7 +64,7 @@ span{
 /*Form start*/
 form#cv-form{
   width: 60rem;
-  height: 40rem;
+  height: 50rem;
   background-color:cornsilk ;
   margin-left: 1rem;
   padding: 0.5rem;
@@ -139,8 +143,8 @@ input[type=submit] {
 }
 .footer{
   position: absolute;
-  top: 78rem;
-  bottom: 0;
+  top: 93rem;
+  bottom: 0; 
   height: 3rem;
  
 }

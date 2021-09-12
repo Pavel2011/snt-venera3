@@ -141,6 +141,11 @@ input[type=submit] {
   align-items: center;
   font-size: 1.0rem;
 }
+.submit-btn:active{
+  transform: scale(0.98);
+}
+
+
 .footer{
   position: absolute;
   top: 93rem;

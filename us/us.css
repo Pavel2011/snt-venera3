@@ -7,61 +7,58 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
-html{
+html {
   height: auto;
 }
-body{
+body {
   /* position: relative; */
-  background-color:cornsilk;
+  background-color: cornsilk;
   margin: 0;
   padding: 0;
   margin-top: 9rem;
   font-size: 1.4rem;
   /* height: 100vh; */
 }
-.header-section{
+.header-section {
   padding-bottom: 2rem;
 }
 .main-nav__items li:nth-child(3) {
   background-color: rgb(107, 101, 101);
-
 }
 .main-nav__items li:nth-child(1) {
   background-color: black;
 }
-.mobile-nav__items li:nth-child(2) {
+.mobile-nav__items li:nth-child(3) {
   background-color: rgb(107, 101, 101);
-width: 100%;
-text-align: center;
+  width: 100%;
+  text-align: center;
 }
 /*   background-color: turquoise; */
 .mobile-nav__items li:nth-child(1) {
   background-color: turquoise;
-width: 100%;
-text-align: center;
+  width: 100%;
+  text-align: center;
 }
-.co-business{
+.co-business {
   /* position: relative; */
-  background-color:cornsilk;
+  background-color: cornsilk;
   /* top: 17rem; */
   left: 0;
   font-family: 'Times New Roman', Times, serif;
 }
 /* Cooks image  start*/
-.co-business{
+.co-business {
   top: 17rem;
 }
 .cooks {
   width: 100vw;
   /* top: 17rem; */
-  height:42rem;
+  height: 42rem;
   background-color: black;
   margin-top: 0rem;
   text-align: center;
-
 }
 .cooks img {
-
   width: 95%;
   height: 41rem;
   margin: 0;
@@ -71,7 +68,8 @@ text-align: center;
   zoom: 102%;
 }
 /* Cooks image end */
-.we-are, .we-are span{
+.we-are,
+.we-are span {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -82,67 +80,60 @@ text-align: center;
   font-size: 1.6rem;
   padding: 1.5rem;
 }
-.food-groups{
+.food-groups {
   width: 100vw;
   height: auto;
   position: relative;
   text-align: center;
 }
-.food-groups h3{
+.food-groups h3 {
   margin-bottom: 2rem;
-
 }
 /* Prod Group-List start */
-.food-group{
+.food-group {
   width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
-.food-group_img{
+.food-group_img {
   width: 50vw;
-height: 20rem;
+  height: 20rem;
 }
-.food-group_img img{
+.food-group_img img {
   height: 19rem;
   width: 30rem;
   object-fit: cover;
 }
-.food-group h4,p{
+.food-group h4,
+p {
   padding: 1rem;
-  
 }
-.food-law{
+.food-law {
   margin: 1rem;
 }
-.food-law ol{
+.food-law ol {
   margin-left: 1rem;
   margin-right: 1rem;
-  margin:1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
 }
-.food-law span{
+.food-law span {
   font-weight: bold;
 }
 /* Prod Group-List end */
 
-
-
 /*End of V-section in US*/
 
-
-
-.footer{
+.footer {
   /* position: absolute; */
-bottom: 0;
+  bottom: 0;
   height: 4rem;
   flex-wrap: wrap;
 }
-@media (max-width:26rem) {
-  .footer{
+@media (max-width: 26rem) {
+  .footer {
     margin: 0;
     padding: 0;
     height: auto;
   }
-  
 }

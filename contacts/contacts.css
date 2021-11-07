@@ -54,14 +54,25 @@ span {
   height: 40rem;
   background-color: cornflowerblue;
 }
-[class*='copyrights-pane'] {
+/* [class*='copyrights-pane'] {
   display: none !important;
-}
-[class*="ground-pane"]{
+} */
+/* [class*="ground-pane"]{
   filter:grayscale(1);
-}
+} */
 .balloon{
+  padding: 0;
   background-color: rgb(208, 220, 241);
+
+}
+.ymaps-2-1-79-balloon__content,
+.ymaps-2-1-79-balloon__layout{
+    background-color: rgb(208, 220, 241);
+
+}
+.ymaps-2-1-79-balloon__close-button{
+background-color: rgb(40, 61, 156);
+    border-radius: 0.3rem;
 }
 .ball-name{
   font-weight: bolder;
@@ -137,4 +148,9 @@ bottom: 0;
   }
 
   /* Mobile Navigation */
+  .balloon{
+    position: static;
+    width: 100%;
+    height: 40%;
+  }
 }

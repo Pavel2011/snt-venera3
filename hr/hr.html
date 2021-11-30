@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Page</title>
+  <link rel="shortcut icon" href="../favicon.jpg" />
+  <!-- <link rel="stylesheet" href="shared.css" /> -->
+  <link rel="stylesheet" href="../main.css" />
+  <link rel="stylesheet" href="hr.css" />
+</head>
+<body>
+  <div class="backdrop"></div>
+  <div class="backdrop1"></div>
+  <section class="header-section">
+    <div class="upper-header ">
+     <div>
+      <a href="index.html" class="main-header__brand">
+
+        <img src="../images/0__LogoAX3.jpg" alt="АГРОХОЛДИНГ - Ваша компания." />
+      </a>
+     </div>
+      
+      <div class="tect-title">
+        <h1 class="c-title">ООО "АГРОХОЛДИНГ"</h1>
+      </div>
+    </div>
+  <header class="main-header">
+    <!-- <div>
+      <button class="toggle-button">
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+      </button>
+      
+    </div> -->
+    <div class="mobile-header">
+      <button class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+      </button>
+      <a href="index.html" class="mobile-header__brand">
+          <img src="../images/0__LogoAX3.jpg" alt="logo AX">
+      </a>
+  </div>
+
+    <nav class="main-nav">
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a href="../index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="../customers/index.html">Наши Заказчики</a>
+        </li>
+        <!-- Changes 26.08.2021 - No Us-page but 'Food cathalog'-page -->
+        <li class="main-nav__item">
+          <a href="../us/index.html">Продукты</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="../deliveries/index.html">Доставка</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="index.html">Вакансии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="../contacts/index.html">Контакты</a>
+        </li>
+       
+        <!-- <li class="main-nav__item main-nav__item--cta">
+            <a href="start-hosting/index.html">Заказываем</a>
+        </li> -->
+      </ul>
+    </nav>
+  </header>
+  <nav class="mobile-nav">
+    <!-- <h2>мобильная версия (не видима на ПК)</h2> -->
+    <button id='mob-menu__close' class=" btn-show">Закрыть</button>
+    <ul class="mobile-nav__items">
+      <li class="mobile-nav__item">
+        <a href="../index.html">Главная</a>
+      </li>
+
+      <li class="mobile-nav__item">
+        <a href="../customers/index.html">Наши Заказчики</a>
+      </li>
+                    <!--  Changes 26.08.2021 - No Us-page but 'Food cathalog'-page -->
+                    <li class="mobile-nav__item">
+                      <a href="../us/index.html">Продукты</a>
+                    </li>
+      <li class="mobile-nav__item">
+        <a href="../deliveries/index.html">Доставка</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="hr/index.html">Вакансии</a>
+      </li> 
+      <li class="mobile-nav__item">
+        <a href="../contacts/index.html">Контакты</a>
+      </li>       
+</section>
+<main class="co-contacts">
+  <!-- big image start -->
+  <div class="hr-image">
+   <img src="../images/4_1_HR_Proforientatsiya.png" alt="hr-positions-image"   
+  </div>
+>
+  <!-- image ends -->
+  <div class="co-info">
+
+
+ <div class="name-and-btn_open_form">
+    <h2>
+      ООО «Агрохолдинг»
+    </h2> 
+     
+
+
+ </div>
+
+    <h3>   Вакансии открыты:
+      <h4 class="point-file1"></h4>
+      <h4 class="point-file2"></h4>
+<div id="file1" class="file1">
+
+  <!-- <input type="file" id="positions" name="hrPositions.txt">
+  <textarea name="" id="" cols="30" rows="2"></textarea> -->
+</div>
+<div id="file2" class="file2">
+
+  <!-- <input type="file" id="positions" name="hrPositions.txt">
+  <textarea name="" id="" cols="30" rows="2"></textarea> -->
+</div>
+    </h3>
+   </div>
+    
+  <!-- <h3 class="form-h2">
+    Если Вас заинтересовала одна из открытых вакансий, -<br> заполните форму, мы обязательно свяжемся с Вами.
+  </h3> -->
+
+</main>
+<!-- FORM STARTS============================================= -->
+<div class="show-hide_btns">
+  <button id="form-closer_btn_id" class="form-closer_btn"> Закрыть форму</button>
+  <button id="form-open_btn_id" class="form-open_btn">Заполнить анкету</button>
+</div>
+
+  <div class="form-container">
+
+      <form id="cv-form" method="POST" action="https://formsubmit.co/051027a6ae96cc513404de09b360c696"  enctype="multipart/form-data">
+    <div class="anketa-and-cancelbtn">
+<h2 class="anketa-form">Анкета соискателя</h2>
+
+    </div>
+        
+    <input type="hidden" name="_subject" value="Новый отклик на Вакансии!">
+    <input type="hidden" name="_cc" value="fecofi@mail.ru">
+    <!-- <fieldset id="fs-frm-inputs"> -->
+
+      <div class="form-name">
+<label for="full-name">ФИО</label>
+      <input type="text" name="name" id="full-name" placeholder="Фамилия Имя Отчество" >
+      <!-- required="" -->
+      </div>
+      <div class="email-address">
+        <label for="email-address">Электронный адрес</label>
+        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" >
+        <!-- required="" -->
+      </div>
+      <!-- <div class="">
+        <label for="gender-male">Мужской</label>
+        <input type="radio">
+
+      </div>
+      <div class="">
+        <label for="gender-female">Женский</label>
+        <input type="radio">
+
+      </div> -->
+
+<div class="form-text">
+  <label for="message">О себе </label>
+  <!-- Текстовое сообщение(позиция, на которую претендуете (из открытых вакансий или другую)опыт: лет, сферы , в которых опыт приобретен) -->
+  <textarea rows="9" name="message" id="message" placeholder="Сопроводительное письмо" ></textarea>
+  <!-- required="" -->
+</div>
+<div class="cv-file">
+  <!-- <label for="file">Файл резюме</label> -->
+  <label for="file">Файл резюме</label>
+  <input type="file" name="attachment" accept="file_extention|.txt,.doc,.pdf">
+
+
+<small>Допустимые форматы для файла: *.txt,*.doc,*.docx,*.pdf</small>
+</div>
+      
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission / Отклик на вакансию">
+    </fieldset>
+    <input class="submit-btn" type="button" value="Отправить">
+    <!-- type="submit" -->
+    <small>После того как нажмёте отправить -вам предложат подтвердить, что вы не робот. Если Вы не робот - поодтвердите.</small>
+  </form> 
+  </div>
+  <!-- Form Ends ===============Form Ends==========================-->
+
+<footer class="footer">
+  <div class="Flag icon">
+<a href="#">RF flag icon</a>
+  </div>
+  <div class="RF">
+    <a href="#">Российская Федерация</a>
+  
+  </div>
+  <div class="Newsletter">
+    <a href="#">Новости</a>
+  </div>
+      <div class="Help">
+    <a href="#">Помощь</a>
+      </div>
+  <div class="Store">
+    <a href="#">Магазин</a>
+     </div>
+  <div class="Following">
+    <a href="#">Следите за нами</a>
+
+  </div>
+  <div class="legal-use">
+    <a href="#">Условия пользования</a>
+    </div>
+  <div class="Vacancies">
+    <a href="#">Вакансии</a>
+    </div>
+  <div class="site-map">
+    <a href="#">Карта сайта</a>
+
+  </div>
+</footer>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+<script src="../script.js"></script>
+<script src="hr2.js"></script>
+</body>
+</html>
+
+<!-- ==old stuff=== -->
+<!-- <ul class="pos-list">
+      <li class="pos"> 
+        <a href="#" class="position"><span>Начальник отдела по работе с клиентами</span> <span class="tooltip-text"></span> </a>
+        </li>
+      <li class="pos">
+        <a href="#" class="position"><span>Старший менеджер по работе с клиентами</span></a>
+        
+       </li>
+      <li class="pos">
+        <a href="#" class="position"><span>Менеджер по работе с клиентами</span> </a>
+        
+      </li>
+        <li class="pos"><span></span> </li>
+      <li class="pos"><span></span></li>
+
+    </ul> -->
+    <!-- <table class="position-table">
+  <tr>
+    <th>Вакансия</th>
+    <th>Оклад</th>
+    
+  </tr>
+  <tr>
+    <td><a href="" class="">Начальник отдела по работе с клиентами</a> </td>
+    <td>50000.00</td>
+    
+  </tr>
+  <tr>
+    <td><a href="" class="">Старший менеджер по работе с клиентами</a></td>
+    <td>35000.00</td>
+  
+  </tr>
+</table> -->
+  <!-- </div> -->

@@ -100,7 +100,7 @@ for(li of lines){
    const newSmall=document.createElement('h6');
    newSmall.classList.add('descR')
   newSmall.textContent=li;
-    point.appendChild(newSmall);
+    point2.appendChild(newSmall);
     
 // console.log(newSmall.textContent);
 // =====end of appends

@@ -159,12 +159,12 @@
 
       <div class="form-name">
 <label for="full-name">ФИО</label>
-      <input type="text" name="name" id="full-name" placeholder="Фамилия Имя Отчество" >
+      <input type="text" name="name" id="full-name" placeholder="Фамилия Имя Отчество" required="">
       <!-- required="" -->
       </div>
       <div class="email-address">
         <label for="email-address">Электронный адрес</label>
-        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" >
+        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
         <!-- required="" -->
       </div>
       <!-- <div class="">
@@ -195,7 +195,7 @@
       
       <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission / Отклик на вакансию">
     </fieldset>
-    <input class="submit-btn" type="button" value="Отправить">
+    <input class="submit-btn" type="submit" value="Отправить">
     <!-- type="submit" -->
     <small>После того как нажмёте отправить -вам предложат подтвердить, что вы не робот. Если Вы не робот - поодтвердите.</small>
   </form> 

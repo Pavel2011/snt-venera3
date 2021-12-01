@@ -72,6 +72,7 @@ let point2=document.querySelector('.point-file2')
 console.log(point2);
 let posDescript2 = document.querySelector('.form-h3')
 console.log(posDescript2)
+var lines2;
 
 function loadDoc3() {
   const xhttp = new XMLHttpRequest();
@@ -80,7 +81,7 @@ function loadDoc3() {
     // document.getElementById("file").innerHTML = this.responseText;
     let fileContent=this.responseText;
       // console.log(fileContent);
-    lines=fileContent.split(/\r\n|\n/);
+    lines2=fileContent.split(/\r\n|\n/);
     // console.log(lines);
 // file.insertAdjacentHTML('beforebegin','<br><a id="d-show1" class="descR-show">'+lines[0]+'</a><br>');
 //     console.log(lines[4]);
@@ -91,12 +92,12 @@ function loadDoc3() {
    const newP=document.createElement('a');   
    newP.setAttribute('id','show-id2');
    newP.classList.add('show-hide_details')
-   newP.textContent=lines[0];
+   newP.textContent=lines2[0];
     point2.appendChild(newP);
 // console.log(newP.textContent);
-let linesWithoutFirst=lines.shift();
+let linesWithoutFirst=lines2.shift();
 // console.log(lines);
-for(li of lines){
+for(li of lines2){
    const newSmall=document.createElement('h6');
    newSmall.classList.add('descR')
   newSmall.textContent=li;
@@ -163,10 +164,7 @@ console.log(mainBlock);
 //   });
 
 // });
-hideFormBtn.addEventListener('onload',function(){
-  mainBlock.style.zIndex=100;
-  console.log(`${hideFormBtn} get clicked`);
-});
+
 
 hideFormBtn.addEventListener('click',function(){
   mainBlock.style.zIndex=10;
@@ -176,8 +174,11 @@ anketaPopUP.addEventListener('click',function(){
   mainBlock.style.zIndex=-10;
   console.log(`${anketaPopUP} get clicked`);
 });
-
-
+// setTimeout(hideFormBtn.addEventListener('load',function(){
+//   mainBlock.style.zIndex=100;
+//   console.log(`${hideFormBtn} get clicked`);
+// }),3000);
+setTimeout(mainBlock.style.zIndex=10,1000)
 // =====================
 
 

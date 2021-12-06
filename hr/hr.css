@@ -19,7 +19,7 @@ body {
   /* font-family: 'Open Sans', sans-serif; */
   box-sizing: border-box;
   /* z-index: -1; */
-    background-color: cornsilk;
+    background-color:cornsilk;
 }
 .main-nav__items li:nth-child(5) {
   background-color: rgb(107, 101, 101);

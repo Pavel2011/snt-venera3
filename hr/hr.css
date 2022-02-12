@@ -14,12 +14,13 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
-  height: 110vh;
+  height: 100vh;
   position: relative;
   /* font-family: 'Open Sans', sans-serif; */
   box-sizing: border-box;
   /* z-index: -1; */
     background-color:cornsilk;
+   
 }
 .main-nav__items li:nth-child(5) {
   background-color: rgb(107, 101, 101);
@@ -45,18 +46,24 @@ main {
 .hr-image {
   width: 100vw;
   /* top: 17rem; */
-  height: 42rem;
-  background-color: black;
+  height: 41rem;
+  background-color: rgb(51, 49, 49);
   margin-top: 0rem;
-  text-align: center;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/4_1_HR_Proforientatsiya.png');
+
 }
 .hr-image img {
-  width: 95%;
+  /* width: 95%; */
+  max-width: 100%;
   height: 41rem;
   margin: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  object-fit: cover;
+  /* text-align: center; */
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+  object-fit: fill;
   zoom: 102%;
 }
 /* end image */
@@ -106,6 +113,7 @@ span {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+   text-align: left;
 }
 .co-info a{
   /* display: none; */
@@ -119,7 +127,16 @@ span {
   border: 0.01px solid gray;
   margin-left: 1rem;
 }
-
+.co-info h4{
+  width: 100%;
+  height: 0.2 rem;
+  padding-top: 0.1rem;
+}
+.co-info div{
+  width: 100%;
+  height: 1.0 rem;
+  padding-top: 2.0rem;
+}
 .descR{
   display: none;
 }
@@ -312,14 +329,23 @@ input[type='submit'] {
   /* height: 3rem; */
 }
 /* FOOTER ends */
-@media (max-width: 26rem) {
-  .mobile-nav__items li:nth-child(5) {
+
+
+/* ==============51REM=============== */
+@media (max-width: 43rem) {
+  /* .mobile-nav__items li:nth-child(5) {
     background-color: rgb(107, 101, 101);
     width: 100%;
     text-align: center;
   }
   .mobile-nav__items li:nth-child(1) {
     background-color: turquoise;
+  } */
+  body{
+    height: 15rem;
+  }
+  main{
+    height: 250vh;
   }
   .co-contacts {
     padding-left: 0.1rem;
@@ -328,6 +354,142 @@ input[type='submit'] {
   .co-contacts h3 {
     font-size: 1.3rem;
   }
+  .form-container{
+    top: 15rem;
+  }
+/* image */
+.hr-image {
+  width: 100vw;
+  /* top: 17rem; */
+  height: 13rem;
+  background-color: black;
+  margin-top: 0rem;
+  text-align: center;
+}
+.hr-image img {
+  width: 95%;
+  height: 13rem;
+  margin: 0;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+  object-fit: cover;
+  zoom: 102%;
+}
+/* end image */
+.co-info{
+  position: absolute;
+  top: 12rem;
+}
+/* .pos-list{
+  padding-top: 0.3rem;
+} */
+.co-info div{
+  padding-top: 0.2rem;
+}
+.pos, h3, a{
+  padding: 0.1rem;
+}
+.co-info h2{
+  font-size: 1.3rem;
+  margin-top: 0.7rem;
+}
+.co-info h3, a{
+  font-size: 1.1rem;
+}
+.co-info h4{
+  font-size: 0.9rem;
+}
+
+.name-and-btn_open_form h2,h3{
+  color: rgb(18, 77, 129);
+  font-weight: 700;
+
+}
+.show-hide_btns{
+  /* position: absolute; */
+  top: -43rem;
+}
+
+  form#cv-form {
+    /* position: absolute; */
+   
+    width: 97%;
+    height: auto;
+    background-color: cornsilk;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(114, 35, 189);
+  }
+
+  .footer {
+    position: relative;
+    top: 80vh;
+
+    /* bottom: 0rem; */
+    /* top: 1.5vh; */
+    /* margin-top: 19rem; */
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+/* ================================================ */
+@media (max-width: 26rem) {
+  body{
+    height: 15rem;
+  }
+  .mobile-nav__items li:nth-child(5) {
+    background-color: rgb(107, 101, 101);
+    width: 100%;
+    text-align: center;
+  }
+  .mobile-nav__items li:nth-child(1) {
+    background-color: turquoise;
+  }
+  main{
+   top: 5rem;
+  }
+  .hr-image{
+    width: 100%;
+    margin: 0;
+  }
+.hr-image img{
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+  .co-contacts {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+  .co-contacts h3 {
+    font-size: 1.3rem;
+  }
+  .show-hide_btns{
+  /* position: absolute; */
+  top: -90rem;
+  right: 0;
+
+}
+.show-hide_btns{
+  height: 7rem;
+    
+}
+.form-open_btn, .form-closer_btn{
+  width: 3rem;
+  height: 7rem;
+  font-size: 0.7rem;
+    writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+.form-open_btn button {
+  vertical-align: middle;
+  writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -0.1rem;
+}
+
   .form-container{
     top: 5rem;
   }

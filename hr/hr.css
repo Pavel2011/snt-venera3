@@ -7,6 +7,8 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;1,300&display=swap');
 /* *{
   height: 100vh;
 } */
@@ -14,13 +16,12 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  /* height: 110vh; */
   position: relative;
   /* font-family: 'Open Sans', sans-serif; */
   box-sizing: border-box;
   /* z-index: -1; */
     background-color:cornsilk;
-   
 }
 .main-nav__items li:nth-child(5) {
   background-color: rgb(107, 101, 101);
@@ -36,43 +37,55 @@ main {
   left: 0;
   background-color:cornsilk;
   /* font-family: 'Times New Roman', Times, serif; */
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Fira Sans', sans-serif;
   z-index: -2;
   opacity: 1.5;
   
   
 }
-/* image */
+/* image start*/
 .hr-image {
-  width: 100vw;
+  /* width: 100vw; */
   /* top: 17rem; */
-  height: 41rem;
+  height: 35rem;
   background-color: rgb(51, 49, 49);
   margin-top: 0rem;
   overflow: hidden;
   background-size: cover;
   background-position: center;
   background-image: url('../images/4_1_HR_Proforientatsiya.png');
+  background-repeat: no-repeat;
 
 }
-.hr-image img {
+/* .hr-image img {
   /* width: 95%; */
-  max-width: 100%;
-  height: 41rem;
-  margin: 0;
+  /* max-width: 100%; */
+  /* height: 41rem;
+  margin: 0; */
   /* text-align: center; */
   /* padding-left: 1rem;
   padding-right: 1rem; */
-  object-fit: fill;
-  zoom: 102%;
-}
+  /* object-fit: fill; */
+  
+  
+/* */
 /* end image */
-
+h2{
+  font-weight: 200;
+  font-size: 3.5rem;
+  padding-left: 1.5rem;
+}
 
 h3 {
   font-size: 1.8rem;
+  font-weight: 200;
   padding: 1.5rem;
   opacity: 0.7;
+}
+h4,h5{
+  text-align: left;
+  font-weight: 300;
 }
 .pos-list {
   margin-left: 1.5rem;
@@ -108,12 +121,12 @@ span {
   color: brown;
 } */
 .co-info{
+  margin-left: 2rem;
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-   text-align: left;
+  align-items: flex-start;
 }
 .co-info a{
   /* display: none; */
@@ -127,15 +140,31 @@ span {
   border: 0.01px solid gray;
   margin-left: 1rem;
 }
-.co-info h4{
-  width: 100%;
-  height: 0.2 rem;
-  padding-top: 0.1rem;
+/* .name-and-btn_open_form span{
+  position: relative;
+  cursor: pointer;
+} */
+.dropdown{
+  margin-left: 0;
+  padding-left: 0;
+  /* display: inline-block; */
+  position: relative;
+  cursor: pointer;
 }
-.co-info div{
-  width: 100%;
-  height: 1.0 rem;
-  padding-top: 2.0rem;
+.pos_details{
+  position: absolute;
+    display: none;
+}
+
+/* .dropdown:active .pos_details{
+display: block;
+} */
+.pos_display{
+  display: block;
+  color: rgb(72, 72, 230);
+}
+.dropdown:active{
+color: rgb(72, 72, 230);  
 }
 .descR{
   display: none;
@@ -170,26 +199,41 @@ align-items:center ;
   color: white;
   border-radius: 0.7rem;
   z-index: 200;
+  cursor: pointer;
 }
 .form-closer_btn{
   position: absolute;
   right: 0;
     background-color: rgb(114, 35, 189);
   color: white;
-    z-index: 200;
+  cursor: pointer;
+    z-index: -40;
+    /* visibility: hidden; */
+
+}
+.btn_hidden{
+    visibility: hidden;
+}
+.btn_visible{
+visibility: visible;
 }
 
+i{
+  width: 2rem;
+  height: 2rem;
+}
 /*Form start*/
 .backdrop1{
   position: fixed;
   display: none;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
       z-index: -5;
     background: rgba(0, 0, 0, 0.4);
 }
 .form-container{
   position: absolute;
+  /* background-color: turquoise; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,7 +256,7 @@ form#cv-form {
 
   width: 50%;
   height: auto;
-  background-color: rgb(190, 236, 250);
+  background-color: rgb(166, 226, 245);
   margin-left: 1rem;
   padding: 0.5rem;
   font-family: 'Open Sans', sans-serif;
@@ -228,6 +272,7 @@ form#cv-form {
 }
 .anketa-and-cancelbtn{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .form-closer_btn{
@@ -341,9 +386,6 @@ input[type='submit'] {
   .mobile-nav__items li:nth-child(1) {
     background-color: turquoise;
   } */
-  body{
-    height: 15rem;
-  }
   main{
     height: 250vh;
   }
@@ -370,38 +412,18 @@ input[type='submit'] {
   width: 95%;
   height: 13rem;
   margin: 0;
-  /* padding-left: 1rem;
-  padding-right: 1rem; */
+  padding-left: 1rem;
+  padding-right: 1rem;
   object-fit: cover;
   zoom: 102%;
 }
 /* end image */
 .co-info{
   position: absolute;
-  top: 12rem;
+  top: 6rem;
 }
-/* .pos-list{
-  padding-top: 0.3rem;
-} */
-.co-info div{
-  padding-top: 0.2rem;
-}
-.pos, h3, a{
-  padding: 0.1rem;
-}
-.co-info h2{
-  font-size: 1.3rem;
-  margin-top: 0.7rem;
-}
-.co-info h3, a{
-  font-size: 1.1rem;
-}
-.co-info h4{
-  font-size: 0.9rem;
-}
-
 .name-and-btn_open_form h2,h3{
-  color: rgb(18, 77, 129);
+  color: aliceblue;
   font-weight: 700;
 
 }
@@ -413,15 +435,30 @@ input[type='submit'] {
   form#cv-form {
     /* position: absolute; */
    
-    width: 97%;
+    width: 50%;
     height: auto;
-    background-color: cornsilk;
+    background-color: rgb(126, 200, 202);
     margin-left: 1rem;
     padding: 0.5rem;
     font-family: 'Open Sans', sans-serif;
     color: rgb(114, 35, 189);
   }
-
+/* fieldset{
+  width: fit-content;
+}
+#fs-frm-inputs{
+  margin-left: 0;
+  padding-left: 0;
+  width: 40%;
+}
+#fs-frm-inputs > div{
+  width: 90%;
+}
+#fs-frm-inputs input{
+  margin: 0;
+  padding: 0;
+  width: 40%;
+} */
   .footer {
     position: relative;
     top: 80vh;
@@ -435,9 +472,6 @@ input[type='submit'] {
 }
 /* ================================================ */
 @media (max-width: 26rem) {
-  body{
-    height: 15rem;
-  }
   .mobile-nav__items li:nth-child(5) {
     background-color: rgb(107, 101, 101);
     width: 100%;
@@ -465,11 +499,13 @@ input[type='submit'] {
   }
   .co-contacts h3 {
     font-size: 1.3rem;
+    color: brown;
   }
   .show-hide_btns{
   /* position: absolute; */
   top: -90rem;
-  right: 0;
+  margin-right: 3rem;
+  right: 3rem;
 
 }
 .show-hide_btns{
@@ -498,7 +534,7 @@ input[type='submit'] {
    
     width: 97%;
     height: auto;
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
     margin-left: 1rem;
     padding: 0.5rem;
     font-family: 'Open Sans', sans-serif;

@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ООО АГРОХОЛДИНГ, Москва,HR Page, Вакансии</title>
+  <title>HR Page</title>
   <link rel="shortcut icon" href="../favicon.jpg" />
+  
   <!-- <link rel="stylesheet" href="shared.css" /> -->
   <link rel="stylesheet" href="../main.css" />
   <link rel="stylesheet" href="hr.css" />
@@ -102,9 +103,9 @@
 <main class="co-contacts">
   <!-- big image start -->
   <div class="hr-image">
-   <!-- <img src="../images/4_1_HR_Proforientatsiya.png" alt="hr-positions-image, вакансии">   -->
+   <img src="../images/4_1_HR_Proforientatsiya.png" alt="hr-positions-image">  
   </div>
-
+>
   <!-- image ends -->
   <div class="co-info">
  <div class="name-and-btn_open_form">
@@ -112,10 +113,132 @@
       ООО «Агрохолдинг»
     </h2>     
  </div>
- <!-- JS work starts here - anchor is h3 class'pos_list' -->
-    <h3 class="pos_">   Вакансии открыты:
-      <div class="pos_list"></div>
+    <h3>   Вакансии открыты:
+      <table class="pos_table">
+        <tr>
+          <td>
+            <a href="" class="a_pos_table">
+              Начальник отдела по работе с клиентами/исполнению Госконтрактов
+            </a>
+          </td>
+          <td>
+            от 80 000 рублей
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="" class="a_pos_table">
+              Заместитель нач. отдела по работе с клиентами/исполнению Госконтрактов
+            </a>
+          </td>
+          <td>
+            от 60 000 рублей
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="" class="a_pos_table">
+              Специались по работе с клиентами/исполнению Госконтрактов
+            </a>
+          </td>
+          <td>
+            от 50 000 рублей
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="" class="a_pos_table">
+              Специалист по работе с тендерами
+            </a>
+          </td>
+          <td>
+            от 70 000 рублей
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="" class="a_pos_table">
+              Специалист по 1С
+            </a>
+          </td>
+          <td>
+            от 45 000 рублей
+          </td>
+        </tr>
 
+      </table>
+      <!-- <div class="dropdown">
+      <h4>
+        <span class="pos_tohover">
+         Начальник отдела по работе с клиентами/исполнению Госконтрактов(от 80 000 рублей). 
+        </span>
+      </h4>        
+      </div> -->
+
+      <!-- <div class="pos_details">
+      <h5>
+        Требования 1
+      </h5>
+            <h5>
+        Обязанности 1
+      </h5>
+      <h5>
+        Условия работы 1
+      </h5>        
+      </div> -->
+<!-- <div class="dropdown">
+  <h4>
+Заместитель нач. отдела по работе с клиентами/исполнению Госконтрактов(от 60 000 рублей).        
+      </h4>
+</div>
+<div class="pos_details">
+      <h5>
+        Требования 2
+      </h5>
+            <h5>
+        Обязанности 2
+      </h5>
+      <h5>
+        Условия работы 2
+      </h5>        
+      </div> -->
+      
+      <!-- <h4>
+Специались по работе с клиентами/исполнению Госконтрактов(от 50 000 рублей).        
+      </h4> -->
+      <!-- <h4>
+Специалист по работе с тендерами(от 70 000 рублей).       
+      </h4>
+      <h4>
+Специалист по 1С(от 45 000 рублей).        
+      </h4>
+      <h4>
+        
+      </h4> -->
+      <h4 class="point-file1"></h4>
+      <h4 class="point-file2"></h4>
+      <h4 class="point-file3"></h4>
+      <h4 class="point-file4"></h4>
+<div id="file1" class="file1">
+
+  <!-- <input type="file" id="positions" name="hrPositions.txt">
+  <textarea name="" id="" cols="30" rows="2"></textarea> -->
+</div>
+<div id="file2" class="file2">
+
+  <!-- <input type="file" id="positions" name="hrPositions.txt">
+  <textarea name="" id="" cols="30" rows="2"></textarea> -->
+</div>
+<div id="file3" class="file3">
+
+  <!-- <input type="file" id="positions" name="hrPositions.txt">
+  <textarea name="" id="" cols="30" rows="2"></textarea> -->
+</div>
+<div id="file4" class="file4">
+
+  <!-- <input type="file" id="positions" name="hrPositions.txt">
+  <textarea name="" id="" cols="30" rows="2"></textarea> -->
+</div>
     </h3>
    </div>
     
@@ -125,12 +248,14 @@
 
 </main>
 <!-- FORM STARTS============================================= -->
-<!-- <div class="show-hide_btns">
+<div class="show-hide_btns">
 
   <button id="form-open_btn_id" class="form-open_btn">Заполнить анкету</button>
+  <i class="far fa-times-circle"></i>
 </div>
 <div class="show-hide_btns">
   <button id="form-closer_btn_id" class="form-closer_btn"> Закрыть форму</button>
+  <i class="far fa-times-circle"></i>
 </div>
 
   <div class="form-container">
@@ -138,46 +263,60 @@
       <form id="cv-form" method="POST" action="https://formsubmit.co/051027a6ae96cc513404de09b360c696"  enctype="multipart/form-data">
     <div class="anketa-and-cancelbtn">
 <h2 class="anketa-form">Анкета соискателя</h2>
+<h4>Все поля обязательны, кроме "О себе"</h4>
 
     </div>
         
     <input type="hidden" name="_subject" value="Новый отклик на Вакансии!">
-    <input type="hidden" name="_cc" value="fecofi@mail.ru">
+    <input type="hidden" name="_cc" value="vacancy.fecofi@mail.ru">
+    <input type="hidden" name="_cc" value="vacancy@agrokholding.ru">
     <!-- <fieldset id="fs-frm-inputs"> -->
 
-      <!-- <div class="form-name">
-<label for="full-name">ФИО</label>
+      <div class="form-name">
+<!-- <label for="full-name">ФИО</label> -->
       <input type="text" name="name" id="full-name" placeholder="Фамилия Имя Отчество" required="" >
-
+      <!-- required="" -->
       </div>
       <div class="email-address">
-        <label for="email-address">Электронный адрес</label>
+        <!-- <label for="email-address">Электронный адрес</label> -->
         <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" >
-
+          
       </div>
       
 <div class="form-text">
-  <label for="message">О себе </label>
-
+  <!-- <label for="message">О себе </label> -->
+  <!-- Текстовое сообщение(позиция, на которую претендуете (из открытых вакансий или другую)опыт: лет, сферы , в которых опыт приобретен) -->
   <textarea rows="9" name="message" id="message" placeholder="Сопроводительное письмо" ></textarea>
+  <!-- required="" -->
 
+  
 </div>
 <div class="cv-file">
+  <!-- <label for="file">Файл резюме</label> -->
+  <!-- <label for="file">Файл резюме</label> -->
+  <input type="file" name="attachment" accept="file_extention|,.doc,.docx,xls,xlsx,.rtf,.pdf">
 
-  <label for="file">Файл резюме</label>
-  <input type="file" name="attachment" accept="file_extention|.txt,.doc,.pdf">
 
-
-<small>Допустимые форматы для файла: *.txt,*.doc,*.docx,*.pdf</small>
+<small>Допустимые форматы для файла: doc,docx,xls,xlsx,rtf или pdf</small>
 </div>
+<div class="cv-photo_file">
+  <label for="file">Фото</label>
+  <!-- <label for="file">Файл резюме</label> -->
+  <!-- <label for="file">Файл резюме</label> -->
+  <input type="file" name="attachment" accept="file_extention|.jpg,.png,.pdf">
+
+
+<small>Допустимые форматы для файла: jpeg,jpg,tiff,psd,bmp,gif,png</small>
+</div>
+
       
       <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission / Отклик на вакансию">
-    </fieldset>
+    <!-- </fieldset> -->
     <input class="submit-btn" type="submit" value="Отправить">
-
+    <!-- type="submit" -->
     <small>После того как нажмёте отправить -вам предложат подтвердить, что вы не робот. Если Вы не робот - поодтвердите.</small>
   </form> 
-  </div> -->
+  </div>
   <!-- Form Ends ===============Form Ends==========================-->
 
 <footer class="footer">
@@ -214,7 +353,7 @@
 </footer>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 <script src="../script.js"></script>
-<script src="hr3.js"></script>
+<script src="hr4.js"></script>
 </body>
 </html>
 
@@ -253,29 +392,3 @@
   </tr>
 </table> -->
   <!-- </div> -->
-
-  <!-- ===positins per file -->
-        <!-- <h4 class="point-file1"></h4>
-      <h4 class="point-file2"></h4>
-      <h4 class="point-file3"></h4>
-      <h4 class="point-file4"></h4> -->
-<!-- <div id="file1" class="file1"> -->
-
-  <!-- <input type="file" id="positions" name="hrPositions.txt">
-  <textarea name="" id="" cols="30" rows="2"></textarea> -->
-<!-- </div>
-<div id="file2" class="file2"> -->
-
-  <!-- <input type="file" id="positions" name="hrPositions.txt">
-  <textarea name="" id="" cols="30" rows="2"></textarea> -->
-<!-- </div>
-<div id="file3" class="file3"> -->
-
-  <!-- <input type="file" id="positions" name="hrPositions.txt">
-  <textarea name="" id="" cols="30" rows="2"></textarea> -->
-<!-- </div>
-<div id="file4" class="file4"> -->
-
-  <!-- <input type="file" id="positions" name="hrPositions.txt">
-  <textarea name="" id="" cols="30" rows="2"></textarea> -->
-<!-- </div> -->

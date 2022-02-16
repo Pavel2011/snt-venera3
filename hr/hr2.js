@@ -3,10 +3,10 @@ console.log(file1)
 var lines;
 let point=document.querySelector('.point-file1')
 console.log(point);
-let posDescript = document.querySelector('.form-h2')
-console.log(posDescript)
+// let posDescript = document.querySelector('.form-h2')
+// console.log(posDescript)
 
-function loadDoc2() {
+function loadDoc1() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
     // let fileText=
@@ -57,12 +57,12 @@ newP.addEventListener('click',toggleDetails);
  
    
     }
-  xhttp.open("GET", "hrDescription.txt", true);
+  xhttp.open("GET", "hr1.txt", true);
   xhttp.send();
 
 
 }
-loadDoc2();
+loadDoc1();
 
 // ======================2=====================================
 let file2 = document.querySelector('.file2')
@@ -74,7 +74,7 @@ let posDescript2 = document.querySelector('.form-h3')
 console.log(posDescript2)
 var lines2;
 
-function loadDoc3() {
+function loadDoc2() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
     // let fileText=
@@ -125,7 +125,78 @@ newP.addEventListener('click',toggleDetails);
  
    
     }
-  xhttp.open("GET", "hrDescription2.txt", true);
+  
+    xhttp.open("GET", "hr2.txt", true);
+  xhttp.send();
+
+
+}
+loadDoc2();
+
+
+// =======================end 2=========================================================
+// ======================3=====================================
+let file3 = document.querySelector('.file3')
+console.log(file3)
+// var lines;
+let point3=document.querySelector('.point-file3')
+console.log(point3);
+let posDescript3 = document.querySelector('.form-h3')
+console.log(posDescript3)
+var lines3;
+
+function loadDoc3() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    // let fileText=
+    // document.getElementById("file").innerHTML = this.responseText;
+    let fileContent=this.responseText;
+      // console.log(fileContent);
+    lines3=fileContent.split(/\r\n|\n/);
+    // console.log(lines);
+// file.insertAdjacentHTML('beforebegin','<br><a id="d-show1" class="descR-show">'+lines[0]+'</a><br>');
+//     console.log(lines[4]);
+    // here is where CloseDescription Button have to be...
+//    for(line of lines){
+// file.insertAdjacentHTML('beforebegin','<p class="descR">'+line+'</p>');
+
+   const newP=document.createElement('a');   
+   newP.setAttribute('id','show-id3');
+   newP.classList.add('show-hide_details')
+   newP.textContent=lines3[0];
+    point3.appendChild(newP);
+// console.log(newP.textContent);
+let linesWithoutFirst=lines3.shift();
+// console.log(lines);
+for(li of lines3){
+   const newSmall=document.createElement('h6');
+   newSmall.classList.add('descR')
+  newSmall.textContent=li;
+    point3.appendChild(newSmall);
+    
+// console.log(newSmall.textContent);
+// =====end of appends
+// ==========start of eventListeners - to show-hide details
+// newSmall.removeAttribute('class','descR');
+function toggleDetails(){
+  // newSmall.removeAttribute('class','descR');
+  if(newSmall.hasAttribute('class','descR')){
+  newSmall.removeAttribute('class','descR');
+  }
+else{
+   newSmall.setAttribute('class','descR');
+}
+}
+
+newP.addEventListener('click',toggleDetails);
+}
+    // newP.textContent=fileContent.split(/n/);
+    // ttx=fileContent.split(/\r\n|\n/);
+    // console.log(ttx);
+ 
+   
+    }
+  xhttp.open("GET", "hr3.txt", true);
   xhttp.send();
 
 
@@ -133,7 +204,79 @@ newP.addEventListener('click',toggleDetails);
 loadDoc3();
 
 
-// =======================end 2=========================================================
+// =======================end 3=========================================================
+
+// ======================44444+++==================
+let file4 = document.querySelector('.file4')
+console.log(file4)
+// var lines;
+let point4=document.querySelector('.point-file4')
+console.log(point4);
+let posDescript4 = document.querySelector('.form-h4')
+console.log(posDescript4)
+var lines4;
+
+function loadDoc4() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    // let fileText=
+    // document.getElementById("file").innerHTML = this.responseText;
+    let fileContent=this.responseText;
+      // console.log(fileContent);
+    lines4=fileContent.split(/\r\n|\n/);
+    // console.log(lines);
+// file.insertAdjacentHTML('beforebegin','<br><a id="d-show1" class="descR-show">'+lines[0]+'</a><br>');
+//     console.log(lines[4]);
+    // here is where CloseDescription Button have to be...
+//    for(line of lines){
+// file.insertAdjacentHTML('beforebegin','<p class="descR">'+line+'</p>');
+
+   const newP=document.createElement('a');   
+   newP.setAttribute('id','show-id4');
+   newP.classList.add('show-hide_details')
+   newP.textContent=lines4[0];
+    point4.appendChild(newP);
+// console.log(newP.textContent);
+let linesWithoutFirst=lines4.shift();
+// console.log(lines);
+for(li of lines4){
+   const newSmall=document.createElement('h6');
+   newSmall.classList.add('descR')
+  newSmall.textContent=li;
+    point4.appendChild(newSmall);
+    
+// console.log(newSmall.textContent);
+// =====end of appends
+// ==========start of eventListeners - to show-hide details
+// newSmall.removeAttribute('class','descR');
+function toggleDetails(){
+  // newSmall.removeAttribute('class','descR');
+  if(newSmall.hasAttribute('class','descR')){
+  newSmall.removeAttribute('class','descR');
+  }
+else{
+   newSmall.setAttribute('class','descR');
+}
+}
+
+newP.addEventListener('click',toggleDetails);
+}
+    // newP.textContent=fileContent.split(/n/);
+    // ttx=fileContent.split(/\r\n|\n/);
+    // console.log(ttx);
+ 
+   
+    }
+  xhttp.open("GET", "hr4.txt", true);
+  xhttp.send();
+
+
+}
+loadDoc4();
+
+
+// =======================end =========================================================
+
 
 
 // =============ALL abott Form and Main - show-hide - main stacked higher at zIndex=10-100
@@ -172,6 +315,7 @@ hideFormBtn.addEventListener('click',function(){
 });
 anketaPopUP.addEventListener('click',function(){
   mainBlock.style.zIndex=-10;
+  // hideFormBtn.classList.toggle('visibility')
   console.log(`${anketaPopUP} get clicked`);
 });
 // setTimeout(hideFormBtn.addEventListener('load',function(){

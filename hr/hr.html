@@ -105,15 +105,100 @@
   <div class="hr-image">
    <img src="../images/4_1_HR_Proforientatsiya.png" alt="hr-positions-image">  
   </div>
->
+
+
+
   <!-- image ends -->
+
+<!-- FORM STARTS============================================= -->
+<div class="show-hide_btns">
+
+  <button id="form-open_btn_id" class="form-open_btn">Заполнить анкету</button>
+  <i class="far fa-times-circle"></i>
+</div>
+<div class="show-hide_btns">
+  <button id="form-closer_btn_id" class="form-closer_btn"> Закрыть форму</button>
+  <i class="far fa-times-circle"></i>
+</div>
+
+  <div class="form-container">
+
+      <form id="cv-form" method="POST" action=""  enctype="">
+        <!--form id="cv-form" method="POST" action="https://formsubmit.co/051027a6ae96cc513404de09b360c696"  enctype="multipart/form-data" -->
+    <div class="anketa-and-cancelbtn">
+<h2 class="anketa-form">Анкета соискателя</h2>
+<h4>Все поля обязательны, кроме "О себе"</h4>
+
+    </div>
+        
+    <input type="hidden" name="_subject" value="Новый отклик на Вакансии!">
+    <input type="hidden" name="_cc" value="vacancy.fecofi@mail.ru">
+    <input type="hidden" name="_cc" value="vacancy@agrokholding.ru">
+    <!-- <fieldset id="fs-frm-inputs"> -->
+
+      <div class="form-name">
+<!-- <label for="full-name">ФИО</label> -->
+      <input type="text" name="name" id="full-name" placeholder="Фамилия Имя Отчество" required="" >
+      <!-- required="" -->
+      </div>
+      <div class="email-address">
+        <!-- <label for="email-address">Электронный адрес</label> -->
+        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" >
+          
+      </div>
+      
+<div class="form-text">
+  <!-- <label for="message">О себе </label> -->
+  <!-- Текстовое сообщение(позиция, на которую претендуете (из открытых вакансий или другую)опыт: лет, сферы , в которых опыт приобретен) -->
+  <textarea rows="9" name="message" id="message" placeholder="Сопроводительное письмо" size="500"></textarea>
+  <!-- required="" -->
+
+  
+</div>
+<div class="cv-file">
+  <label for="file">Файл резюме</label>
+  <!-- <label for="file">Файл резюме</label>..name="attachment"  -->
+  <input type="file" name="attachment" value="Файл с Резюме" accept="file_extention|,.doc,.docx,xls,xlsx,.rtf,.pdf" >
+
+
+<small>Допустимые форматы для файла: doc,docx,xls,xlsx,rtf или pdf</small>
+</div>
+<div class="cv-photo_file">
+  <label for="file">Фото</label>
+  <!-- <label for="file">Файл резюме</label> -->
+  <!-- <label for="file">Файл резюме</label> -->
+  <input type="file" name="attachment" accept="file_extention|.jpg,.png,.pdf">
+
+
+<small>Допустимые форматы для файла: jpeg,jpg,tiff,psd,bmp,gif,png</small>
+</div>
+
+      
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission / Отклик на вакансию">
+    <!-- </fieldset> -->
+    <input class="submit-btn" type="submit" value="Отправить">
+    <!-- type="submit" -->
+    <small>После того как нажмёте отправить -вам предложат подтвердить, что вы не робот. Если Вы не робот - поодтвердите.</small>
+  </form> 
+  </div>
+  <!-- Form Ends ===============Form Ends==========================-->
+
+
+
+
   <div class="co-info">
  <div class="name-and-btn_open_form">
-    <h2>
+    <!-- <h2>
       ООО «Агрохолдинг»
-    </h2>     
+    </h2>  -->
+    <h3>Дорогие друзья!</h3>  
+    <p>
+      ООО «Агрохолдинг» — это не только продукты, благодаря надежным и бесперебойным поставкам которых тысячи людей обеспечены полноценным горячим питанием. Это в первую очередь люди — сотрудники Компании, которых мы по праву считаем главной ценностью и ключевым ресурсом «Агрохолдинга». Все достижения Компании — это, прежде всего, результат труда ее сплоченного коллектива. Мы ценим готовность сотрудников к непрерывному обучению и профессиональному развитию, их нацеленность на результат, умение работать в команде — когда каждый вносит вклад в общее дело, и берет на себя ответственность за выполненную работу.
+    </p>  
  </div>
-    <h3>   Вакансии открыты:
+
+
+    <h3>   В настоящее время открыты следующие вакансии
       <table class="pos_table">
         <tr>
           <td>
@@ -124,6 +209,9 @@
           <td>
             от 80 000 рублей
           </td>
+        </tr>
+        <tr class="tr-details">
+          <th colspan="2" class="td-details">Requirements</th>          
         </tr>
         <tr>
           <td>
@@ -246,78 +334,9 @@
     Если Вас заинтересовала одна из открытых вакансий, -<br> заполните форму, мы обязательно свяжемся с Вами.
   </h3> -->
 
+
+
 </main>
-<!-- FORM STARTS============================================= -->
-<div class="show-hide_btns">
-
-  <button id="form-open_btn_id" class="form-open_btn">Заполнить анкету</button>
-  <i class="far fa-times-circle"></i>
-</div>
-<div class="show-hide_btns">
-  <button id="form-closer_btn_id" class="form-closer_btn"> Закрыть форму</button>
-  <i class="far fa-times-circle"></i>
-</div>
-
-  <div class="form-container">
-
-      <form id="cv-form" method="POST" action="https://formsubmit.co/051027a6ae96cc513404de09b360c696"  enctype="multipart/form-data">
-    <div class="anketa-and-cancelbtn">
-<h2 class="anketa-form">Анкета соискателя</h2>
-<h4>Все поля обязательны, кроме "О себе"</h4>
-
-    </div>
-        
-    <input type="hidden" name="_subject" value="Новый отклик на Вакансии!">
-    <input type="hidden" name="_cc" value="vacancy.fecofi@mail.ru">
-    <input type="hidden" name="_cc" value="vacancy@agrokholding.ru">
-    <!-- <fieldset id="fs-frm-inputs"> -->
-
-      <div class="form-name">
-<!-- <label for="full-name">ФИО</label> -->
-      <input type="text" name="name" id="full-name" placeholder="Фамилия Имя Отчество" required="" >
-      <!-- required="" -->
-      </div>
-      <div class="email-address">
-        <!-- <label for="email-address">Электронный адрес</label> -->
-        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" >
-          
-      </div>
-      
-<div class="form-text">
-  <!-- <label for="message">О себе </label> -->
-  <!-- Текстовое сообщение(позиция, на которую претендуете (из открытых вакансий или другую)опыт: лет, сферы , в которых опыт приобретен) -->
-  <textarea rows="9" name="message" id="message" placeholder="Сопроводительное письмо" ></textarea>
-  <!-- required="" -->
-
-  
-</div>
-<div class="cv-file">
-  <!-- <label for="file">Файл резюме</label> -->
-  <!-- <label for="file">Файл резюме</label> -->
-  <input type="file" name="attachment" accept="file_extention|,.doc,.docx,xls,xlsx,.rtf,.pdf">
-
-
-<small>Допустимые форматы для файла: doc,docx,xls,xlsx,rtf или pdf</small>
-</div>
-<div class="cv-photo_file">
-  <label for="file">Фото</label>
-  <!-- <label for="file">Файл резюме</label> -->
-  <!-- <label for="file">Файл резюме</label> -->
-  <input type="file" name="attachment" accept="file_extention|.jpg,.png,.pdf">
-
-
-<small>Допустимые форматы для файла: jpeg,jpg,tiff,psd,bmp,gif,png</small>
-</div>
-
-      
-      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission / Отклик на вакансию">
-    <!-- </fieldset> -->
-    <input class="submit-btn" type="submit" value="Отправить">
-    <!-- type="submit" -->
-    <small>После того как нажмёте отправить -вам предложат подтвердить, что вы не робот. Если Вы не робот - поодтвердите.</small>
-  </form> 
-  </div>
-  <!-- Form Ends ===============Form Ends==========================-->
 
 <footer class="footer">
   <div class="Flag icon">

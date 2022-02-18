@@ -32,7 +32,7 @@ body {
 main {
   position: relative;
   width: 100%;
-  height: 150vh;
+  height: 180vh;
   top: 7rem;
   left: 0;
   background-color:cornsilk;
@@ -48,32 +48,39 @@ main {
 .hr-image {
   /* width: 100vw; */
   /* top: 17rem; */
-  height: 35rem;
-  background-color: rgb(51, 49, 49);
+  height: 17rem;
+  width: 100%;
+  /* background-color: rgb(51, 49, 49); */
+  background-color:linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) ;
   margin-top: 0rem;
   overflow: hidden;
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
-  background-image: url('../images/4_1_HR_Proforientatsiya.png');
-  background-repeat: no-repeat;
+  background-image: url('../images/4_1_HR_Proforientatsiya.png'); 
+  background-repeat: repeat; */
+  /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
 
 }
-/* .hr-image img {
-  /* width: 95%; */
-  /* max-width: 100%; */
-  /* height: 41rem;
-  margin: 0; */
-  /* text-align: center; */
-  /* padding-left: 1rem;
-  padding-right: 1rem; */
-  /* object-fit: fill; */
+.hr-image img {
+    -webkit-box-reflect: right;
+ width: 50%; 
+  max-width: 100%; 
+  height: 18rem;
+  margin: 0;
+text-align: center;
+padding-left: 0rem;
+  padding-right: 0rem;
+object-fit: cover;
+}
   
-  
-/* */
+
 /* end image */
 h2{
   font-weight: 200;
   font-size: 3.5rem;
+  padding-left: 1.5rem;
+}
+p{
   padding-left: 1.5rem;
 }
 
@@ -98,7 +105,7 @@ h4,h5{
   font-size: 1.4rem;
   text-decoration: none;
 }
-.pos-list li a {
+.pos-list li,a {
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   color: black;
@@ -136,10 +143,20 @@ span {
   cursor: pointer;
   color: red;
 }
-.position-table, th, td{
-  border: 0.01px solid gray;
-  margin-left: 1rem;
+.position-table, th, td,th{
+  border: 0.05px solid gray;
+   margin-left: 1rem;
+   text-align: left;
 }
+.position-table, th{
+color: rgb(209, 87, 87); 
+font-size: 1.5rem;
+font-weight: 300; 
+display: none;
+}
+/* .pos_table table,tr,td{
+border: 0;
+} */
 /* .name-and-btn_open_form span{
   position: relative;
   cursor: pointer;
@@ -238,7 +255,7 @@ i{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 45rem;
+  top: 10rem;
 align-items: center;
   /* display: none; */
   margin: 0;
@@ -246,6 +263,9 @@ align-items: center;
   width:100% ;
   border-radius: 11.5rem;
   /* z-index: 160; */
+}
+.form-container{
+  display: none;
 }
 .showModal{
   display:block;
@@ -255,7 +275,7 @@ align-items: center;
 form#cv-form {
 
   width: 50%;
-  height: auto;
+  height: 70%;
   background-color: rgb(166, 226, 245);
   margin-left: 1rem;
   padding: 0.5rem;
@@ -283,11 +303,13 @@ form#cv-form {
   border-radius: 0.7rem;
   z-index: 200;
 }
-
+.anketa-and-cancelbtn h4{
+  padding-left: 1.5rem;
+}
 
 #cv-form input {
-  margin: 0.5rem;
-  padding: 1rem;
+  margin: 1.5rem;
+  padding: 0.5rem;
 }
 /*placeholder color*/
 ::placeholder {
@@ -314,6 +336,7 @@ form#cv-form {
   width: 15rem;
 }
 textarea {
+  margin-left: 1.5rem;
   width: 15rem;
 
 }
@@ -321,6 +344,10 @@ textarea {
   /* height: 7rem; */
   margin-top: 1rem;
   padding: 0.5rem;
+  display: flex; 
+  justify-content: flex-start;
+  align-items: flex-start;
+
 }
 
 input[type='submit'] {

@@ -10,10 +10,13 @@
   <!-- <link rel="stylesheet" href="shared.css" /> -->
   <link rel="stylesheet" href="../main.css" />
   <link rel="stylesheet" href="hr.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-  <div class="backdrop"></div>
-  <div class="backdrop1"></div>
+  <div class="backdrop">    
+  </div>
+  <div class="backdrop1">    
+  </div>
   <section class="header-section">
     <div class="upper-header ">
      <div>
@@ -28,14 +31,7 @@
       </div>
     </div>
   <header class="main-header">
-    <!-- <div>
-      <button class="toggle-button">
-        <span class="toggle-button__bar"></span>
-        <span class="toggle-button__bar"></span>
-        <span class="toggle-button__bar"></span>
-      </button>
-      
-    </div> -->
+
     <div class="mobile-header">
       <button class="toggle-button">
           <span class="toggle-button__bar"></span>
@@ -55,7 +51,7 @@
         <li class="main-nav__item">
           <a href="../customers/index.html">Наши Заказчики</a>
         </li>
-        <!-- Changes 26.08.2021 - No Us-page but 'Food cathalog'-page -->
+
         <li class="main-nav__item">
           <a href="../us/index.html">Продукты</a>
         </li>
@@ -68,10 +64,6 @@
         <li class="main-nav__item">
           <a href="../contacts/index.html">Контакты</a>
         </li>
-       
-        <!-- <li class="main-nav__item main-nav__item--cta">
-            <a href="start-hosting/index.html">Заказываем</a>
-        </li> -->
       </ul>
     </nav>
   </header>
@@ -86,7 +78,7 @@
       <li class="mobile-nav__item">
         <a href="../customers/index.html">Наши Заказчики</a>
       </li>
-                    <!--  Changes 26.08.2021 - No Us-page but 'Food cathalog'-page -->
+
                     <li class="mobile-nav__item">
                       <a href="../us/index.html">Продукты</a>
                     </li>
@@ -98,9 +90,14 @@
       </li> 
       <li class="mobile-nav__item">
         <a href="../contacts/index.html">Контакты</a>
-      </li>       
-</section>
-<main class="co-contacts">
+      </li>  
+     </ul>
+  </nav>    
+    </section>
+<!-- MAIN starts -->
+
+<section class="co-contacts">
+
   <!-- big image start -->
   <div class="hr-image">
    <img src="../images/4_1_HR_Proforientatsiya.png" alt="hr-positions-image">  
@@ -114,17 +111,16 @@
 <div class="show-hide_btns">
 
   <button id="form-open_btn_id" class="form-open_btn">Заполнить анкету</button>
-  <i class="far fa-times-circle"></i>
+  <!-- <i class="far fa-times-circle"></i> -->
 </div>
-<div class="show-hide_btns">
+
+<div class="form-container">
+<div class="form-hide_btn">
   <button id="form-closer_btn_id" class="form-closer_btn"> Закрыть форму</button>
-  <i class="far fa-times-circle"></i>
-</div>
+  <!-- <i class="far fa-times-circle"></i> -->
+</div> 
+      <form id="cv-form" method="POST" action="https://formsubmit.co/051027a6ae96cc513404de09b360c696"  enctype="multipart/form-data">
 
-  <div class="form-container">
-
-      <form id="cv-form" method="POST" action=""  enctype="">
-        <!--form id="cv-form" method="POST" action="https://formsubmit.co/051027a6ae96cc513404de09b360c696"  enctype="multipart/form-data" -->
     <div class="anketa-and-cancelbtn">
 <h2 class="anketa-form">Анкета соискателя</h2>
 <h4>Все поля обязательны, кроме "О себе"</h4>
@@ -134,39 +130,37 @@
     <input type="hidden" name="_subject" value="Новый отклик на Вакансии!">
     <input type="hidden" name="_cc" value="vacancy.fecofi@mail.ru">
     <input type="hidden" name="_cc" value="vacancy@agrokholding.ru">
-    <!-- <fieldset id="fs-frm-inputs"> -->
+
 
       <div class="form-name">
-<!-- <label for="full-name">ФИО</label> -->
+
       <input type="text" name="name" id="full-name" placeholder="Фамилия Имя Отчество" required="" >
-      <!-- required="" -->
+
       </div>
       <div class="email-address">
-        <!-- <label for="email-address">Электронный адрес</label> -->
+
         <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" >
           
       </div>
       
 <div class="form-text">
-  <!-- <label for="message">О себе </label> -->
-  <!-- Текстовое сообщение(позиция, на которую претендуете (из открытых вакансий или другую)опыт: лет, сферы , в которых опыт приобретен) -->
-  <textarea rows="9" name="message" id="message" placeholder="Сопроводительное письмо" size="500"></textarea>
-  <!-- required="" -->
+
+  <textarea rows="9" name="message" id="message" placeholder="Сопроводительное письмо"></textarea>
+
 
   
 </div>
 <div class="cv-file">
   <label for="file">Файл резюме</label>
-  <!-- <label for="file">Файл резюме</label>..name="attachment"  -->
-  <input type="file" name="attachment" value="Файл с Резюме" accept="file_extention|,.doc,.docx,xls,xlsx,.rtf,.pdf" >
+
+  <input type="file" name="attachment" accept=".doc,.docx,xls,xlsx,.rtf,.pdf" >
 
 
 <small>Допустимые форматы для файла: doc,docx,xls,xlsx,rtf или pdf</small>
 </div>
 <div class="cv-photo_file">
   <label for="file">Фото</label>
-  <!-- <label for="file">Файл резюме</label> -->
-  <!-- <label for="file">Файл резюме</label> -->
+
   <input type="file" name="attachment" accept="file_extention|.jpg,.png,.pdf">
 
 
@@ -175,22 +169,18 @@
 
       
       <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission / Отклик на вакансию">
-    <!-- </fieldset> -->
+
     <input class="submit-btn" type="submit" value="Отправить">
-    <!-- type="submit" -->
+
     <small>После того как нажмёте отправить -вам предложат подтвердить, что вы не робот. Если Вы не робот - поодтвердите.</small>
   </form> 
-  </div>
+  </div> -->
   <!-- Form Ends ===============Form Ends==========================-->
 
-
-
-
   <div class="co-info">
- <div class="name-and-btn_open_form">
-    <!-- <h2>
-      ООО «Агрохолдинг»
-    </h2>  -->
+ <div class="intro_hr"> 
+
+
     <h3>Дорогие друзья!</h3>  
     <p>
       ООО «Агрохолдинг» — это не только продукты, благодаря надежным и бесперебойным поставкам которых тысячи людей обеспечены полноценным горячим питанием. Это в первую очередь люди — сотрудники Компании, которых мы по праву считаем главной ценностью и ключевым ресурсом «Агрохолдинга». Все достижения Компании — это, прежде всего, результат труда ее сплоченного коллектива. Мы ценим готовность сотрудников к непрерывному обучению и профессиональному развитию, их нацеленность на результат, умение работать в команде — когда каждый вносит вклад в общее дело, и берет на себя ответственность за выполненную работу.
@@ -198,58 +188,54 @@
  </div>
 
 
-    <h3>   В настоящее время открыты следующие вакансии    </h3>
-      <table class="pos_table">
-        <tr class="tr-position_info">
-          <td>
-              <h5> <span role="button">Начальник отдела по работе с клиентами/исполнению Госконтрактов</span> </h5>
-            <!-- <table class="p-dd">
-              <tr class="t-p-details">
-                <th colspan="2" rowspan="3">
-                  
-                  RequirementsXZX
-                </th>
+    <h3>   
+      В настоящее время открыты следующие вакансии    
+    </h3>
+      <div id='hr_table_id' class="pos_table">
 
-              </tr>
-            </table> -->
-          </td>
-          <td>
+          <div  class="div-position_info hr1">
+                            <!-- Начальник отдела по работе с клиентами/исполнению Госконтрактов -->
+            <a href="" class="a_pos_table">
+                Начальник отдела по работе с клиентами/исполнению Госконтрактов
+            </a>             
+          </div>
+          <div class="div-position_info hr2 salary">
             от 80 000 рублей
-          </td>
-        </tr>
-        <tr class="tr-details">
-          <th colspan="2" class="td-details">
+          </div>
+
+          <div class="div-details hr3">
+
             <h4>Описание вакансии</h4>
             <ul class="Ddd">
-              <li class="d1"><span>Ваши Задачи:</span>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              <li class="d1"><span>Ваши Задачи:</span>  Начальник===Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
               </li>
               <li class="d2">
                 <span>Наши условия:</span>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
               </li>
               <li class="d3"><span>Требования к кандидату:</span>
-                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+                 Высшее образование==Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
               </li>
               <li class="d4">
                 <button id="btn1_ddd" class="anketa_open">Откликнуться</button>
               </li>
             </ul>            
-          </th>          
-        </tr>
-        <tr>
-          <td>
-            <a href="" class="a_pos_table">
+
+          </div>
+        <div class="div-position_info hr4">
+          <a href="" class="a_pos_table">
               Заместитель нач. отдела по работе с клиентами/исполнению Госконтрактов
             </a>
-          </td>
-          <td>
+
+        </div>  
+          <div class="div-position_info hr5 salary">
             от 60 000 рублей
-          </td>
-        </tr>
-        <tr class="tr-details">
-          <th colspan="2" class="td-details">
+          </div>
+        
+        <div class="div-details hr6">
+
             <h4>Описание вакансии</h4>
             <ul class="Ddd">
-              <li class="d1"><span>Ваши Задачи:</span>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              <li class="d1"><span>Ваши Задачи:</span> Заместитель нач. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
               </li>
               <li class="d2">
                 <span>Наши условия:</span>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -261,23 +247,23 @@
                 <button id="btn2_ddd" class="anketa_open">Откликнуться</button>
               </li>
             </ul>                        
-          </th>          
-        </tr>
-        <tr>
-          <td>
+          <!-- </div>           -->
+        </div>
+        <div class="div-position_info hr7">
             <a href="" class="a_pos_table">
-              Специались по работе с клиентами/исполнению Госконтрактов
-            </a>
-          </td>
-          <td>
+              Специалист по работе с клиентами/исполнению Госконтрактов
+            </a>          
+
+         </div> 
+        <div  class="div-position_info hr8 salary">
             от 50 000 рублей
-          </td>
-        </tr>
-        <tr class="tr-details">
-          <th colspan="2" class="td-details">
+        </div>
+        
+        <div class="div-details hr9">
+
             <h4>Описание вакансии</h4>
             <ul class="Ddd">
-              <li class="d1"><span>Ваши Задачи:</span>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              <li class="d1"><span>Ваши Задачи:</span>  Специалист по работе с клиентами===Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
               </li>
               <li class="d2">
                 <span>Наши условия:</span>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -289,23 +275,23 @@
                 <button id="btn3_ddd" class="anketa_open">Откликнуться</button>
               </li>
             </ul>                        
-          </th>          
-        </tr>        
-        <tr>
-          <td>
+
+        </div>        
+        <div class="div-position_info hr10">
             <a href="" class="a_pos_table">
               Специалист по работе с тендерами
-            </a>
-          </td>
-          <td>
+            </a>          
+
+        </div>  
+        <div class="div-position_info hr11 salary">
             от 70 000 рублей
-          </td>
-        </tr>
-        <tr class="tr-details">
-          <th colspan="2" class="td-details">
+        </div>
+        
+        <div class="div-details hr12">
+
             <h4>Описание вакансии</h4>
             <ul class="Ddd">
-              <li class="d1"><span>Ваши Задачи:</span>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              <li class="d1"><span>Ваши Задачи:</span>  Специалист по работе с тендерами===Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
               </li>
               <li class="d2">
                 <span>Наши условия:</span>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -314,26 +300,25 @@
                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
               </li>
               <li class="d4">
-                <button id="btn1_ddd" class="anketa_open">Откликнуться</button>
+                <button id="btn4_ddd" class="anketa_open">Откликнуться</button>
               </li>
             </ul>                        
-          </th>          
-        </tr>        
-        <tr>
-          <td>
+
+        </div>        
+        <div class="div-position_info hr13">
             <a href="" class="a_pos_table">
               Специалист по 1С
-            </a>
-          </td>
-          <td>
+            </a>       
+
+        </div>  
+        <div class="div-position_info hr14 salary">
             от 45 000 рублей
-          </td>
-        </tr>
-        <tr class="tr-details">
-          <th colspan="2" class="td-details">
+        </div>
+        <div class="div-details hr15">
+
             <h4>Описание вакансии</h4>
             <ul class="Ddd">
-              <li class="d1"><span>Ваши Задачи:</span>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              <li class="d1"><span>Ваши Задачи:</span>  Специалист по 1С===Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
               </li>
               <li class="d2">
                 <span>Наши условия:</span>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -342,94 +327,14 @@
                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
               </li>
               <li class="d4">
-                <button id="btn1_ddd" class="anketa_open">Откликнуться</button>
+                <button id="btn5_ddd" class="anketa_open">Откликнуться</button>
               </li>
             </ul>                        
-          </th>          
-        </tr>
-      </table>
-      <!-- <div class="dropdown">
-      <h4>
-        <span class="pos_tohover">
-         Начальник отдела по работе с клиентами/исполнению Госконтрактов(от 80 000 рублей). 
-        </span>
-      </h4>        
-      </div> -->
 
-      <!-- <div class="pos_details">
-      <h5>
-        Требования 1
-      </h5>
-            <h5>
-        Обязанности 1
-      </h5>
-      <h5>
-        Условия работы 1
-      </h5>        
-      </div> -->
-<!-- <div class="dropdown">
-  <h4>
-Заместитель нач. отдела по работе с клиентами/исполнению Госконтрактов(от 60 000 рублей).        
-      </h4>
-</div>
-<div class="pos_details">
-      <h5>
-        Требования 2
-      </h5>
-            <h5>
-        Обязанности 2
-      </h5>
-      <h5>
-        Условия работы 2
-      </h5>        
-      </div> -->
-      
-      <!-- <h4>
-Специались по работе с клиентами/исполнению Госконтрактов(от 50 000 рублей).        
-      </h4> -->
-      <!-- <h4>
-Специалист по работе с тендерами(от 70 000 рублей).       
-      </h4>
-      <h4>
-Специалист по 1С(от 45 000 рублей).        
-      </h4>
-      <h4>
-        
-      </h4> -->
-      <h4 class="point-file1"></h4>
-      <h4 class="point-file2"></h4>
-      <h4 class="point-file3"></h4>
-      <h4 class="point-file4"></h4>
-<div id="file1" class="file1">
-
-  <!-- <input type="file" id="positions" name="hrPositions.txt">
-  <textarea name="" id="" cols="30" rows="2"></textarea> -->
-</div>
-<div id="file2" class="file2">
-
-  <!-- <input type="file" id="positions" name="hrPositions.txt">
-  <textarea name="" id="" cols="30" rows="2"></textarea> -->
-</div>
-<div id="file3" class="file3">
-
-  <!-- <input type="file" id="positions" name="hrPositions.txt">
-  <textarea name="" id="" cols="30" rows="2"></textarea> -->
-</div>
-<div id="file4" class="file4">
-
-  <!-- <input type="file" id="positions" name="hrPositions.txt">
-  <textarea name="" id="" cols="30" rows="2"></textarea> -->
-</div>
-
-   </div>
-    
-  <!-- <h3 class="form-h2">
-    Если Вас заинтересовала одна из открытых вакансий, -<br> заполните форму, мы обязательно свяжемся с Вами.
-  </h3> -->
-
-
-
-</main>
+        </div>
+      </div>    
+   </div>  
+</section>
 
 <footer class="footer">
   <div class="Flag icon">
@@ -463,44 +368,10 @@
 
   </div>
 </footer>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
 <script src="../script.js"></script>
 <script src="hr5.js"></script>
 </body>
 </html>
 
-<!-- ==old stuff=== -->
-<!-- <ul class="pos-list">
-      <li class="pos"> 
-        <a href="#" class="position"><span>Начальник отдела по работе с клиентами</span> <span class="tooltip-text"></span> </a>
-        </li>
-      <li class="pos">
-        <a href="#" class="position"><span>Старший менеджер по работе с клиентами</span></a>
-        
-       </li>
-      <li class="pos">
-        <a href="#" class="position"><span>Менеджер по работе с клиентами</span> </a>
-        
-      </li>
-        <li class="pos"><span></span> </li>
-      <li class="pos"><span></span></li>
 
-    </ul> -->
-    <!-- <table class="position-table">
-  <tr>
-    <th>Вакансия</th>
-    <th>Оклад</th>
-    
-  </tr>
-  <tr>
-    <td><a href="" class="">Начальник отдела по работе с клиентами</a> </td>
-    <td>50000.00</td>
-    
-  </tr>
-  <tr>
-    <td><a href="" class="">Старший менеджер по работе с клиентами</a></td>
-    <td>35000.00</td>
-  
-  </tr>
-</table> -->
-  <!-- </div> -->

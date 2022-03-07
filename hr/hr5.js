@@ -17,23 +17,27 @@ console.log(eCase);
 // console.dir(hrTag);
 if(e.target.tagName==='A'){
   console.dir(e.target.parentElement);
+  let eE=e.target.parentElement.nextElementSibling.nextElementSibling;
  e.target.parentElement.nextElementSibling.nextElementSibling.classList.toggle('pos_display'); 
 }
 if(e.target.tagName==='DIV'){
+  eE=e.target;
   const eClasses=e.target.classList;
   console.log(eClasses);
   if(e.target.classList.length===2){
+    eE=e.target.nextElementSibling.nextElementSibling;
      e.target.nextElementSibling.nextElementSibling.classList.toggle('pos_display');  
   }
   if(e.target.classList.length===3){
+    eE=e.target.nextElementSibling
      e.target.nextElementSibling.classList.toggle('pos_display');  
   }
 }
 
 // =============ОТКЛИКНУТЬСЯ - начало====
 // const anketaPopUP=document.querySelector('#form-open_btn_id');//btn to trigger Z-INDEX=-20 on Main
-const anketaPopUP=document.querySelector('.div-details button');
-console.log(anketaPopUP);
+const anketaPopUP=eE.querySelector('.div-details button');
+console.dir(anketaPopUP);
 const mainBlock=document.querySelector('.co-contacts');//the class of Main
 const coInfo2=document.querySelector('.co-info');//consist of btn = <button class="form-open_btn">
 let backdrop1=document.querySelector('.backdrop1');
@@ -65,8 +69,20 @@ setTimeout(mainBlock.style.zIndex=10,1000)
 
 
 });
+const formContainer=document.getElementsByClassName('form-container')[0];
+let allBtnHr=document.querySelectorAll('button[id^=btn]');
+console.log(allBtnHr);
+for(let i=0;i<allBtnHr.length;i++){
+  allBtnHr[i].addEventListener('click',function(){
+  console.clear();
+  console.log('you clicked it all');  
+  formContainer.style.zIndex=200;
+    formContainer.style.display='block'
+  hideFormBtn.style.zIndex=400;
+  hideFormBtn.classList.toggle('btn_visible');  
+  })
 
-
+}
 
 
 

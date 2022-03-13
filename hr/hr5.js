@@ -6,7 +6,7 @@ console.dir(posChildren.length);
 // console.log(posA.nextElementSibling)
 // const hr3=$('.hr3')[0] //here all for all positions
 // console.log(hr3)
-
+// =====position details unfold / dropdown code===
 posArr1.addEventListener('click',e=>{
     e.preventDefault();
     
@@ -17,58 +17,71 @@ console.log(eCase);
 // console.dir(hrTag);
 if(e.target.tagName==='A'){
   console.dir(e.target.parentElement);
-  let eE=e.target.parentElement.nextElementSibling.nextElementSibling;
+
  e.target.parentElement.nextElementSibling.nextElementSibling.classList.toggle('pos_display'); 
 }
 if(e.target.tagName==='DIV'){
-  eE=e.target;
+
   const eClasses=e.target.classList;
   console.log(eClasses);
   if(e.target.classList.length===2){
-    eE=e.target.nextElementSibling.nextElementSibling;
+
      e.target.nextElementSibling.nextElementSibling.classList.toggle('pos_display');  
   }
   if(e.target.classList.length===3){
-    eE=e.target.nextElementSibling
+
      e.target.nextElementSibling.classList.toggle('pos_display');  
   }
 }
-
+// =====position details unfold / dropdown code ---END===
 // =============ОТКЛИКНУТЬСЯ - начало====
-// const anketaPopUP=document.querySelector('#form-open_btn_id');//btn to trigger Z-INDEX=-20 on Main
-const anketaPopUP=eE.querySelector('.div-details button');
-console.dir(anketaPopUP);
+const anketaPopUP=document.querySelector('#form-open_btn_id');//btn to trigger Z-INDEX=-20 on Main
+// const anketaPopUP=eE.querySelector('.div-details button');
+// console.dir(anketaPopUP);
 const mainBlock=document.querySelector('.co-contacts');//the class of Main
 const coInfo2=document.querySelector('.co-info');//consist of btn = <button class="form-open_btn">
 let backdrop1=document.querySelector('.backdrop1');
 const hideFormBtn=document.querySelector('#form-closer_btn_id');// triger Main to Z=100 to hide Form
+const hideBtnDiv=document.querySelector('.form-hide_btn');
+console.log(hideBtnDiv);
 const formContainer=document.getElementsByClassName('form-container')[0];
-console.log(anketaPopUP);
+// console.log(anketaPopUP);
 console.log(hideFormBtn);
 console.log(formContainer);
-  hideFormBtn.style.zIndex=-200;
+  // hideFormBtn.style.zIndex=-200;
 
+  // ======hideFormBtn.addEventListener=====
 hideFormBtn.addEventListener('click',function(){
   mainBlock.style.zIndex=10;
-  anketaPopUP.style.zIndex=200;
+  // anketaPopUP.style.zIndex=200;
   hideFormBtn.style.zIndex=-200;
   console.log(`${hideFormBtn} get clicked`);
 });
+// ======hideFormBtn.addEventListener - END===
+// =====anketaPopUP.addEventListener - START===
 anketaPopUP.addEventListener('click',function(){
   mainBlock.style.zIndex=10;
   // formContainer.classList.add('pos_display');
     formContainer.style.zIndex=200;
     formContainer.style.display='block'
-  hideFormBtn.style.zIndex=400;
-  hideFormBtn.classList.toggle('btn_visible');
+    hideBtnDiv.style.display='block';
+    hideBtnDiv.style.zIndex='400';
+  // hideFormBtn.style.zIndex=400;
+// hideBtnDiv.classList.toggle('btn_visible');//DIV
+    hideFormBtn.classList.toggle('btn_visible'); //BTN
   // hideFormBtn.classList.toggle('visibility')
   console.log(`${anketaPopUP} get clicked`);
+  // ====view screen up - to view form===
+
 });
+// =====anketaPopUP.addEventListener - END===
+// window.location.href='#cv-form'
 setTimeout(mainBlock.style.zIndex=10,1000)
-// =============ОТКЛИКНУТЬСЯ - конец====
-
-
 });
+// =============ОТКЛИКНУТЬСЯ - конец====
+// ==with click to any blue-BTN-0ТКЛИКНУТЬСЯ - form container will pop up============
+
+// const hideFormBtn=document.querySelector('#form-closer_btn_id');// triger Main to Z=100 to hide Form
 const formContainer=document.getElementsByClassName('form-container')[0];
 let allBtnHr=document.querySelectorAll('button[id^=btn]');
 console.log(allBtnHr);
@@ -78,13 +91,33 @@ for(let i=0;i<allBtnHr.length;i++){
   console.log('you clicked it all');  
   formContainer.style.zIndex=200;
     formContainer.style.display='block'
-  hideFormBtn.style.zIndex=400;
-  hideFormBtn.classList.toggle('btn_visible');  
+  hideFormBtn.style.zIndex=1400;
+  hideFormBtn.style.display='block';
+
+
+  // hideFormBtn.classList.toggle('btn_visible');  
   })
 
 }
+// ==with click to any blue-BTN-0ТКЛИКНУТЬСЯ - form container will pop up============
+// =============ОТКЛИКНУТЬСЯ - конец====
+// ========HIDE FORM== start===
+const mainBlock=document.querySelector('.co-contacts');//the class of Main
+const coInfo2=document.querySelector('.co-info');//consist of btn = <button class="form-open_btn">
+let backdrop1=document.querySelector('.backdrop1');
 
-
+const hideFormBtn=document.querySelector('#form-closer_btn_id');// triger Main to Z=100 to hide Form
+hideFormBtn.addEventListener('click',function(){
+  mainBlock.style.zIndex=10;
+  anketaPopUP.style.zIndex=200;
+  hideFormBtn.style.zIndex=-200;
+  document.location.reload();
+  console.log(`${hideFormBtn} get clicked`);
+});
+      // window.location.href='hr.html'
+      // window.history.back()
+// window.location.reload();
+// ===========HIDE FORM END=========
 
 
 

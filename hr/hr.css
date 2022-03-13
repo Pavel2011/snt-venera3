@@ -20,7 +20,7 @@ body {
   /* font-family: 'Open Sans', sans-serif; */
   box-sizing: border-box;
   /* z-index: -1; */
-    background-color:cornsilk;
+    background-color:#fff;
 }
 .main-nav__items li:nth-child(5) {
   background-color: rgb(107, 101, 101);
@@ -34,12 +34,12 @@ body {
   height: 180vh;
   top: 7rem;
   left: 0;
-  background-color:cornsilk;
+    background-color:#fff;
   /* font-family: 'Times New Roman', Times, serif; */
   /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Fira Sans', sans-serif;
   z-index: 2;
-  opacity: 1.5;
+  /* opacity: 1.5; */
   
   
 }
@@ -81,10 +81,11 @@ h2{
 }
 p{
   padding-left: 1.5rem;
+  opacity: 0.8;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 200;
   padding: 1.5rem;
   opacity: 0.7;
@@ -101,7 +102,7 @@ h4,h5{
 
 .pos-list li {
   padding: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 .pos-list li,a {
@@ -142,7 +143,8 @@ span {
 .pos_table{
   border: 0.05px solid gray;
    margin-left: 1rem;
-   background-color: rgb(243, 235, 235);
+   /* background-color: rgb(243, 235, 235); */
+       background-color:#fff;
    display: grid;
    grid-template-columns: 80% 20%;
    text-align: left;
@@ -160,8 +162,8 @@ span {
 
 .co-info a, .hr2, .hr5, .hr8, .hr11, .hr14{
   /* display: none; */
-    color: brown;
-    font-size: 1.7rem;
+    color:#007bc1;
+    font-size: 1.1rem;
 
 }
 
@@ -172,9 +174,10 @@ a.a_pos_table:hover{
 }
 
 .pos_table h4{
-color: rgb(209, 87, 87); 
+/* color: rgb(209, 87, 87);  */
+color: #007bc1;
   letter-spacing: 0.5rem;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   font-weight: 500; 
 /* display: none; */
 }
@@ -190,16 +193,20 @@ list-style-type: none;
   font-style: italic;
 }
 .d1{
-  background-color: rgb(205, 246, 246);
+  /* background-color: rgb(205, 246, 246); */
+      background-color:#fff;
 }
 .d2{
-  background-color: rgb(2050, 235, 235);
+  /* background-color: rgb(215, 235, 235); */
+      background-color:#fff;
 }
 .d3{
-  background-color: rgb(217, 246, 246);
+  /* background-color: rgb(217, 246, 246); */
+      background-color:#fff;
 }
 .d4{
-  background-color:rgb(217, 246, 246);
+  /* background-color:rgb(217, 246, 246); */
+      background-color:#fff;
 }
 .div-details button{
   cursor: pointer;
@@ -271,7 +278,7 @@ justify-content: flex-start;
 align-items:center ;
 }
 
-.form-open_btn{
+/* .form-open_btn{
   position: absolute;
     width: 10rem;
   height: 3rem;
@@ -281,7 +288,7 @@ align-items:center ;
   border-radius: 0.7rem;
   z-index: 200;
   cursor: pointer;
-}
+} */
 
 
 i{
@@ -298,7 +305,7 @@ i{
     background: rgba(0, 0, 0, 0.4);
 }
 .form-container{
-  position: absolute;
+  /* position: absolute; */
   /* background-color: turquoise; */
   display: flex;
   /* flex-direction: column; */
@@ -322,9 +329,10 @@ align-items: center;
 }
 /* hide form BTN  - start*/
 .form-closer_btn{
-  position: absolute;
+  position: relative;
   right: 0;
-    background-color: rgb(114, 35, 189);
+    /* background-color: rgb(114, 35, 189); */
+    background-color: rgb(156, 50, 50);
   color: white;
   cursor: pointer;
     z-index: -40;
@@ -334,12 +342,18 @@ align-items: center;
 .form-hide_btn{
   /* position: absolute; */
   height: 3rem;
+right: 1rem;
+top: 10rem;
+z-index: -100;
+display: none;
 }
 .btn_hidden{
     visibility: hidden;
 }
 .btn_visible{
+  display: block;
 visibility: visible;
+z-index: 400;
 }
 
 
@@ -349,13 +363,13 @@ form#cv-form {
 
   width: 50%;
   height: 70%;
-  background-color: rgb(166, 226, 245);
+  background-color: #f1faff;
   margin-left: 1rem;
   padding: 0.5rem;
   font-family: 'Open Sans', sans-serif;
-  color: rgb(114, 35, 189);
+  /* color: rgb(114, 35, 189); */
   border-radius: 1.5rem;
-  opacity: 1.2;
+  opacity: 0.7;
 }
 .anketa-form{
   width: 90%;
@@ -371,10 +385,11 @@ form#cv-form {
 .form-closer_btn{
   width: 10rem;
   height: 3rem;
-  background-color: rgb(114, 35, 189);
+  /* background-color: rgb(114, 35, 189); */
+  background-color: rgb(121, 26, 26);
   color: white;
   border-radius: 0.7rem;
-  z-index: 200;
+  /* z-index: 200; */
 }
 .anketa-and-cancelbtn h4{
   padding-left: 1.5rem;
@@ -387,20 +402,20 @@ form#cv-form {
 /*placeholder color*/
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(114, 35, 189);
-  opacity: 0.6; /* Firefox */
+    /* color: rgb(114, 35, 189); */
+  opacity: 0.8; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: rgb(114, 35, 189);
-  opacity: 0.6; /* Firefox */
+  opacity: 0.8; /* Firefox */
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: rgb(114, 35, 189);
-  opacity: 0.6; /* Firefox */
+  opacity: 0.8; /* Firefox */
 }
 #cv-form label {
   width: 15rem;
@@ -424,7 +439,9 @@ textarea {
 }
 
 input[type='submit'] {
-  background-color: rgb(144, 98, 187);
+  /* background-color: rgb(144, 98, 187); */
+  background-color: #d5d5d5;
+  opacity: 0.8;
   border: none;
   border-radius: 0.3rem;
   color: white;
@@ -434,7 +451,8 @@ input[type='submit'] {
   cursor: pointer;
 }
 ::-webkit-file-upload-button {
-  background-color: rgb(144, 98, 187);
+  /* background-color: rgb(144, 98, 187); */
+  background-color: lightgrey;
   width: 7.5rem;
   height: 3rem;
   border: none;
@@ -519,7 +537,7 @@ input[type='submit'] {
 }
 /* end image */
 .co-info{
-  position: absolute;
+  /* position: absolute; */
   top: 6rem;
 }
 .name-and-btn_open_form h2,h3{
@@ -537,11 +555,12 @@ input[type='submit'] {
    
     width: 50%;
     height: auto;
-    background-color: rgb(126, 200, 202);
+    /* background-color: rgb(126, 200, 202); */
+    background-color: #f1faff;
     margin-left: 1rem;
     padding: 0.5rem;
     font-family: 'Open Sans', sans-serif;
-    color: rgb(114, 35, 189);
+    /* color: rgb(114, 35, 189); */
   }
 /* fieldset{
   width: fit-content;
@@ -560,8 +579,8 @@ input[type='submit'] {
   width: 40%;
 } */
   .footer {
-    position: relative;
-    top: 180vh;
+    /* position: relative; */
+    /* top: 180vh; */
 
     /* bottom: 0rem; */
     /* top: 1.5vh; */
@@ -581,6 +600,7 @@ input[type='submit'] {
     background-color: turquoise;
   }
   main{
+    position: static;
    top: 5rem;
   }
   .hr-image{
@@ -600,7 +620,7 @@ input[type='submit'] {
   }
   .co-contacts h3 {
     font-size: 1.3rem;
-    color: brown;
+    /* color: brown; */
   }
   .co-info{
     top: 12rem;
@@ -645,12 +665,12 @@ input[type='submit'] {
     margin-left: 1rem;
     padding: 0.5rem;
     font-family: 'Open Sans', sans-serif;
-    color: rgb(114, 35, 189);
+    /* color: rgb(114, 35, 189); */
   }
 /* =====================================FOOTER===== */
   .footer {
-    position: relative;
-    top: 80vh;
+    /* position: relative;
+    top: 80vh; */
 
     /* bottom: 0rem; */
     /* top: 1.5vh; */

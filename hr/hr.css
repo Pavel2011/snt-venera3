@@ -81,7 +81,7 @@ h2{
 }
 p{
   padding-left: 1.5rem;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 h3 {
@@ -99,7 +99,9 @@ h4,h5{
   padding: 1.5rem;
   text-decoration: none;
 }
-
+ul.Ddd{
+  margin-right: 1rem;
+}
 .pos-list li {
   padding: 1rem;
   font-size: 1.1rem;
@@ -185,6 +187,7 @@ color: #007bc1;
 
 li{
 list-style-type: none;
+font-weight: 400;
 }
 
 .pos_table span{
@@ -361,8 +364,8 @@ z-index: 400;
 
 form#cv-form {
 
-  width: 50%;
-  height: 70%;
+  width: 80%;
+  height: 50%;
   background-color: #f1faff;
   margin-left: 1rem;
   padding: 0.5rem;
@@ -395,6 +398,14 @@ form#cv-form {
   padding-left: 1.5rem;
 }
 
+/* FORM LAYed as GRID */
+.form-grid{
+  display: grid;
+  background-color: aqua;
+    grid-template-columns: repeat(2,49%);
+
+}
+/* FORM LAYed as GRID - END */
 #cv-form input {
   margin: 1.5rem;
   padding: 0.5rem;

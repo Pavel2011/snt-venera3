@@ -143,29 +143,31 @@
       <input type="text" name="name" id="full-name" placeholder="Фамилия Имя Отчество" required="" >
 
       </div>
+  <label for="email">Электронный адрес</label>
       <div class="email-address">
 
         <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" >
           
       </div>
-      
-<div class="form-text">
+        <label for="">Сопроводительное письмо</label>
+      <div class="form-text">
 
   <textarea rows="9" name="message" id="message" placeholder="Сопроводительное письмо"></textarea>
 
 
   
 </div>
-<div class="cv-file">
   <label for="file">Файл резюме</label>
+<div class="cv-file">
 
   <input type="file" name="attachment" accept=".doc,.docx,xls,xlsx,.rtf,.pdf" >
 
 
 <small>Допустимые форматы для файла: doc,docx,xls,xlsx,rtf или pdf</small>
 </div>
-<div class="cv-photo_file">
   <label for="file">Фото</label>
+<div class="cv-photo_file">
+
 
   <input type="file" name="attachment" accept="file_extention|.jpg,.png,.pdf">
 
@@ -173,10 +175,13 @@
 <small>Допустимые форматы для файла: jpeg,jpg,tiff,psd,bmp,gif,png</small>
 </div>
 
-      
+ <div class="">
+
       <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission / Отклик на вакансию">
 
-    <input class="submit-btn" type="submit" value="Отправить">
+    <input class="submit-btn" type="submit" value="Отправить">  
+ </div>     
+
 
     <small>После того как нажмёте отправить -вам предложат подтвердить, что вы не робот. Если Вы не робот - поодтвердите.</small>      
     </div>

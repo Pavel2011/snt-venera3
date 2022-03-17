@@ -401,9 +401,14 @@ form#cv-form {
 /* FORM LAYed as GRID */
 .form-grid{
   display: grid;
-  background-color: aqua;
+  /* background-color: aqua; */
     grid-template-columns: repeat(2,49%);
 
+}
+label{
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
 }
 /* FORM LAYed as GRID - END */
 #cv-form input {
@@ -477,6 +482,7 @@ input[type='submit'] {
 }
 .cv-file small {
   opacity: 0.4;
+  margin-top: 0.1rem;
 }
 .form-name,
 .form-text,

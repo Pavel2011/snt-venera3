@@ -365,6 +365,7 @@ z-index: 400;
 form#cv-form {
 
   width: 80%;
+  max-width: 50rem;
   height: 50%;
   background-color: #f1faff;
   margin-left: 1rem;

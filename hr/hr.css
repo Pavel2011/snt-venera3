@@ -482,7 +482,10 @@ input[type='submit'] {
   flex-direction: column;
 }
 .cv-file small {
-  opacity: 0.4;
+  display: block;
+  opacity: 0.9;
+  font-size: 0.7rem;
+  font-weight: 300;
   margin-top: 0.1rem;
 }
 .form-name,

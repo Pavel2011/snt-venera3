@@ -164,6 +164,7 @@ span {
 
 .co-info a, .hr2, .hr5, .hr8, .hr11, .hr14{
   /* display: none; */
+
     color:#007bc1;
     font-size: 1.1rem;
 
@@ -516,7 +517,7 @@ input[type='submit'] {
 
 
 /* ==============51REM=============== */
-@media (max-width: 43rem) {
+@media (max-width: 48rem) {
   /* .mobile-nav__items li:nth-child(5) {
     background-color: rgb(107, 101, 101);
     width: 100%;
@@ -535,6 +536,11 @@ input[type='submit'] {
   .co-contacts h3 {
     font-size: 1.3rem;
   }
+.intro_hr h3{
+  color:black;
+  opacity: 0.5;
+}
+
   .form-container{
     top: 15rem;
   }
@@ -574,7 +580,7 @@ input[type='submit'] {
   form#cv-form {
     /* position: absolute; */
    
-    width: 50%;
+    width: 70%;
     height: auto;
     /* background-color: rgb(126, 200, 202); */
     background-color: #f1faff;
@@ -599,7 +605,7 @@ input[type='submit'] {
   padding: 0;
   width: 40%;
 } */
-  .footer {
+  /* .footer { */
     /* position: relative; */
     /* top: 180vh; */
 
@@ -608,7 +614,37 @@ input[type='submit'] {
     /* margin-top: 19rem; */
     /* flex-wrap: wrap;
     height: auto; */
-  }
+  /* }
+} */
+.anketa-form{
+    padding-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-align: left;
+}
+.anketa-and-cancelbtn h4{
+    padding-left: 2rem;
+  text-align: left;
+  letter-spacing: 0.2rem;
+}
+.form-grid{
+  gap: 0.2rem;
+}
+#cv-form input{
+  margin: 0.1rem;
+  padding: 0.1rem;
+  border: 0.5rem;
+}
+.submit-btn{
+  width: 80%;
+  height: 80%;
+
+
+}
+input[type='submit'] {
+  color: brown;  
+  font-size: x-large;
 }
 /* ================================================ */
 @media (max-width: 26rem) {
@@ -644,7 +680,16 @@ input[type='submit'] {
     /* color: brown; */
   }
   .co-info{
+    width: 97%;
+    margin-left: 0.1rem;
     top: 12rem;
+  }
+  .co-info h3,p{
+    padding-left: 0.1rem;
+  }
+  .pos_table{
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
   }
   .pos_table a, .div-position_info{
     font-size: 1.0rem;
@@ -687,6 +732,12 @@ input[type='submit'] {
     padding: 0.5rem;
     font-family: 'Open Sans', sans-serif;
     /* color: rgb(114, 35, 189); */
+  }
+  .form-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
   }
 /* =====================================FOOTER===== */
   .footer {

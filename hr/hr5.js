@@ -58,6 +58,7 @@ hideFormBtn.addEventListener('click',function(){
   console.log(`${hideFormBtn} get clicked`);
 });
 // ======hideFormBtn.addEventListener - END===
+// =================================================================
 // =====anketaPopUP.addEventListener - START===
 anketaPopUP.addEventListener('click',function(){
   mainBlock.style.zIndex=10;
@@ -71,12 +72,21 @@ anketaPopUP.addEventListener('click',function(){
     hideFormBtn.classList.toggle('btn_visible'); //BTN
   // hideFormBtn.classList.toggle('visibility')
   console.log(`${anketaPopUP} get clicked`);
+  alert('см. выше--75')
   // ====view screen up - to view form===
-
+//   let elToView=document.getElementById('cv-form');
+//   console.log(elToView);
+//   function scrollToTop() {
+//   elToView.scrollIntoView(true);
+// }
+// scrollToTop()
+// let scrollTop=document.body.scrollTop;
+// console.log(scrollTop);
 });
 // =====anketaPopUP.addEventListener - END===
 // window.location.href='#cv-form'
-setTimeout(mainBlock.style.zIndex=10,1000)
+// setTimeout(mainBlock.style.zIndex=10,1000)
+
 });
 // =============ОТКЛИКНУТЬСЯ - конец====
 // ==with click to any blue-BTN-0ТКЛИКНУТЬСЯ - form container will pop up============
@@ -87,14 +97,17 @@ let allBtnHr=document.querySelectorAll('button[id^=btn]');
 console.log(allBtnHr);
 for(let i=0;i<allBtnHr.length;i++){
   allBtnHr[i].addEventListener('click',function(){
-  console.clear();
+    // ========console clear=====
+  // console.clear();
   console.log('you clicked it all');  
   formContainer.style.zIndex=200;
     formContainer.style.display='block'
   hideFormBtn.style.zIndex=1400;
   hideFormBtn.style.display='block';
-
-
+alert('см. форму выше')
+  // document.body.scrollTop;
+// let scrollPos=window.scrolli(0,findPos(document.getElementById("cv-form")));
+// console.log(scrollPos);
   // hideFormBtn.classList.toggle('btn_visible');  
   })
 
@@ -114,6 +127,8 @@ hideFormBtn.addEventListener('click',function(){
   document.location.reload();
   console.log(`${hideFormBtn} get clicked`);
 });
+// let elmntToView = document.getElementById("cv-form");
+// elmntToView.scrollIntoView();
       // window.location.href='hr.html'
       // window.history.back()
 // window.location.reload();

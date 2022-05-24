@@ -66,13 +66,17 @@ h2 {
 .upper-header div {
   top: 0;
   left: 0;
-  height: 4rem;
+  height: 2.5rem;
   /* margin: 1rem 1rem; */
+    /* background: url(images/2__RF_flag_w_LOGO.png) 0 0;
+    z-index: -100; */
 }
 .upper-header h1 {
   margin-left: 3rem;
   /* color: rgba(248, 244, 244, 0.932); */
-  color: #e8ebf3;
+  /* color: #e8ebf3; */
+  color: rgba(236, 229, 229, 0.7);
+
   font-family: 'Times New Roman', sans-serif;
   font-size: 2rem;
   font-weight: Extra-light 200;
@@ -82,7 +86,7 @@ h2 {
 
 .main-header__brand img {
   height: 90%;
-  width: 120%;
+  /* width: 120%; */
 }
 
 .header-main-nav {

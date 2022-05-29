@@ -489,6 +489,10 @@ background-color: rgb(40, 61, 156);
   color: rgba(255, 255, 255, 0.794);
   text-decoration: none;
 }
+.rflag{
+  height: 1.5rem;
+  width: auto;
+}
 .footer a:hover,
 .footer a:active {
   color: white;

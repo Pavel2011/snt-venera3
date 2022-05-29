@@ -95,6 +95,10 @@ span{
   /* bottom: 0; */
   height: 3rem;
 }
+.rflag{
+  height: 1.5rem;
+  width: auto;
+}
 @media (max-width:26rem) {
   .mobile-nav__items li:nth-child(3) {
     background-color: rgb(107, 101, 101);

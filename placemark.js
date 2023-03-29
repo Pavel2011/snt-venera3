@@ -11,8 +11,9 @@ let placemark = new ymaps.Placemark([55.781617, 37.68749], {
   balloonContent:`
   <div class='balloon'>
   <div class='ball-name'>ООО \"Агрохолдинг\"</div>
-  <div class='ball-phone'>Телефон\:+ 7 (499) 265-5681</div>
-  <div class='ball-address'>Адрес\:105082 г. Москва, Центросоюзный переулок,д.21А,стр.30,этаж 3,пом.II,ком.9</div>
+  <div class='ball-phone'>Телефон\:+ 7 (495) 761-6691 (основной).</div>
+  <div class='ball-phone'>Телефон\:+ 7 (929) 545-2713</div>
+  <div class='ball-address'>Адрес\:Дубининская ул., д. 27, с.7.</div>
   </div>
   `
 }, {

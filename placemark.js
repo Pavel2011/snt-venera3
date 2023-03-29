@@ -5,7 +5,7 @@ function init() {
     zoom: 16,
   });
 
-let placemark = new ymaps.Placemark([55.781617, 37.68749], {
+let placemark = new ymaps.Placemark([55.725983986082504, 37.638348341308486], {
   // baloonContentHeader:'ООО Агрохолдинг',
   // balloonContentBody:'ООО \"Агрохолдинг\"'
   balloonContent:`

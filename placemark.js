@@ -1,19 +1,20 @@
 ymaps.ready(init)
 function init() {
   let myMap = new ymaps.Map('ah-map', {
-    center: [55.781617, 37.68749],
+    center: [55.095874, 36.517316],
     zoom: 16,
   });
 
-let placemark = new ymaps.Placemark([55.725983986082504, 37.638348341308486], {
+let placemark = new ymaps.Placemark([55.095874, 36.517316], {
   // baloonContentHeader:'ООО Агрохолдинг',
   // balloonContentBody:'ООО \"Агрохолдинг\"'
   balloonContent:`
   <div class='balloon'>
-  <div class='ball-name'>ООО \"Агрохолдинг\"</div>
-  <div class='ball-phone'>Телефон\:+ 7 (495) 761-6691 (основной).</div>
-  <div class='ball-phone'>Телефон\:+ 7 (929) 545-2713</div>
-  <div class='ball-address'>Адрес\:Дубининская ул., д. 27, с.7.</div>
+  <div class='ball-name'>СНТ \"Венера\"</div>
+  <div class='ball-phone'>Телефон\:Председатель Потехо А.И. + 7 910-910-41-11, 
+         </div>
+  <div class='ball-phone'>Телефон\:Бухгалтер Милакина Ольга  + 7 951-325-73-38</div>
+  <div class='ball-address'>Юридический Адрес\:249010, Калужская область, Боровский район, деревня Городня</div>
   </div>
   `
 }, {

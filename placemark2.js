@@ -2,11 +2,11 @@
 ymaps.ready(init)
 function init() {
   let myMap2 = new ymaps.Map('ah-map2', {
-    center: [55.781094, 37.688081],
+    center: [55.095874, 36.517316],
     zoom: 16,
   });
 
-let placemark = new ymaps.Placemark([55.725983986082504, 37.638348341308486], {
+let placemark = new ymaps.Placemark([55.095874, 36.517316], {
 
   balloonContent:`
   <div class='balloon'>

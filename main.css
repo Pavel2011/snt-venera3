@@ -241,7 +241,7 @@ h2 {
 }
 /*main picture section*/
 .first-section__div {
-  /* width: 100vw; */
+   width: 100vw; /* ======15.05.2024 - SNT========  */
   height: 30rem;/*37rem, 47rem
   /* margin-top: 2.5rem; */
   /* display: block; */

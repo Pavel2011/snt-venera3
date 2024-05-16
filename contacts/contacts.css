@@ -56,7 +56,7 @@ span {
   filter:grayscale(1);
 } */
 .map {
-  width: 50rem;
+  width: 95%; /*width: 50rem; - 16.05.2024 */
   height: auto;
   min-height: 40rem;
   padding-right: 1rem;

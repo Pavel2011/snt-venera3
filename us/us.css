@@ -97,12 +97,12 @@ body {
   align-items: center;
 }
 .food-group_img {
-  width: 50vw;
-  height: 20rem;
+  width: 80vw;
+  height: 70vh;
 }
 .food-group_img img {
-  height: 19rem;
-  width: 30rem;
+  height: 65vh;
+  width: 60vh;
   object-fit: cover;
 }
 .food-group h4,

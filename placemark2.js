@@ -13,7 +13,7 @@ let placemark = new ymaps.Placemark([55.095874, 36.517316], {
   <div class='ball-name'>СНТ \"Венера\"</div>
   <div class='ball-phone'>Телефон\:Председатель Потехо А.И. + 7 910-910-41-11, 
          </div>
-  <div class='ball-phone'>Телефон\:Бухгалтер Милакина Ольга  + 7 951-325-73-38</div>
+  <div class='ball-phone'>Телефон\:Бухгалтер Милакина Ольга  + 7 951-325-73-38, milakinaolga@mail.ru</div>
   <div class='ball-address'>Юридический Адрес\:249010, Калужская область, Боровский район, деревня Городня</div>
   </div>
   `

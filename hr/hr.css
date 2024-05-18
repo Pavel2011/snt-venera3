@@ -22,6 +22,12 @@ body {
   /* z-index: -1; */
     background-color:#fff;
 }
+/*===================================18.05.2024======*/
+.small-robot{
+font-weight: 400;
+font-style: italic;
+}
+/*==================+++===================*/
 .main-nav__items li:nth-child(5) {
   background-color: rgb(107, 101, 101);
 }

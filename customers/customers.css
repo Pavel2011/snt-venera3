@@ -87,7 +87,24 @@ span{
    color: blueviolet;
 }
 
-
+/* =================object=====*/
+.pdf{
+  width: 70%;
+  height:40rem;
+}
+.customer-list.pdf{
+  width: 95%;
+  height: 15rem;
+}
+object.pdf{
+  width: 110%;
+    height: 35rem;
+}
+embed.pdf{
+  width: 110%;
+  height: 35rem;
+}
+/*=================================*/
 .footer{
   /* position: absolute;
   top:114rem; */

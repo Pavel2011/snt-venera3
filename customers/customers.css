@@ -87,23 +87,65 @@ span{
    color: blueviolet;
 }
 
+/*============CAROUSEL of images=======================*/
+/*===========carousel======================*/
+.carousel slide{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-inner{
+width: 60rem;
+}
+
 /* =================object=====*/
 .pdf{
-  width: 70%;
-  height:40rem;
+  width: 97%;
+  height:90%;
 }
 .customer-list.pdf{
   width: 95%;
   height: 15rem;
 }
 object.pdf{
-  width: 110%;
+  width: 100%;
     height: 35rem;
 }
 embed.pdf{
   width: 110%;
   height: 35rem;
 }
+/*.carousel-control-prev, 
+.carousel-control-next{
+  color: brown;
+}*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+  color: red;
+  }
+
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 4rem;
+  font-weight: 700;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 4rem;
+    font-weight: 700;
+  color: red;
+}
+/*=================================*/
 /*=================================*/
 .footer{
   /* position: absolute;

@@ -190,8 +190,8 @@ embed.pdf{
     font-size: 0.7rem;
   }
   .footer{
-    top: 195rem;
-    /* bottom: 0; */
+    /*top: 195rem;*/
+     bottom:7rem; 
   
     position: absolute;    
     height: 7rem;

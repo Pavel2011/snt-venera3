@@ -73,7 +73,9 @@ padding: 1.5rem;
   font-size: 1.3rem;
   padding-left: 1rem;
 }
-
+.customer-list img{
+  width: 97%;
+}
 li.customer-list img{
   /* width: 3.2%; */
 height: 2.4rem;

@@ -426,7 +426,9 @@ label{
 /*placeholder color*/
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-    /* color: rgb(114, 35, 189); */
+    color: rgb(114, 35, 189); 
+   font-size: 1rem;
+ /* color: red;*/
   opacity: 0.8; /* Firefox */
 }
 

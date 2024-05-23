@@ -54,7 +54,7 @@ body {
   width: 100vw;
   /* top: 17rem; */
   /*height: 42rem;*/
-  background-color: black;
+  background-color: rgb(240, 233, 233);
   margin-top: 0rem;
   text-align: center;
 }
@@ -101,8 +101,8 @@ body {
   height: 70vh;
 }
 .food-group_img img {
-  height: 65vh;
-  width: 60vh;
+  height:auto;
+  width: 97%;
   object-fit: cover;
 }
 .food-group h4,

@@ -640,6 +640,7 @@ input[type='submit'] {
   gap: 0.2rem;
 }
 #cv-form input{
+  width: 20rem;
   margin: 0.1rem;
   padding: 0.1rem;
   border: 0.5rem;

@@ -846,5 +846,6 @@ background-color: rgb(40, 61, 156);
   }
   section.vton-section h1 {
     font-size: 1.3rem;
+    color: blueviolet;
   }
 }

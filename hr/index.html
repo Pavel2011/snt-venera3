@@ -4,20 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HR Page</title>
+  <title>Вопросы Председателю и Правлению</title>
   <link rel="shortcut icon" href="../Venus_page-0001--обрезано + Венера-1.jpg" />
+  
   <!-- <link rel="stylesheet" href="shared.css" /> -->
   <link rel="stylesheet" href="../main.css" />
   <link rel="stylesheet" href="hr.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-  <div class="backdrop"></div>
+  <div class="backdrop">    
+  </div>
+  <div class="backdrop1">    
+  </div>
   <section class="header-section">
     <div class="upper-header ">
      <div>
       <a href="index.html" class="main-header__brand">
 
-        <img src="../Venus_page-0001--обрезано + Венера-1.jpg" alt="СНТ Венера." />
+        <img src="../Venus_page-0001--обрезано + Венера-1.jpg " alt="SNT Venera non commercial" />
       </a>
      </div>
       
@@ -26,14 +31,7 @@
       </div>
     </div>
   <header class="main-header">
-    <!-- <div>
-      <button class="toggle-button">
-        <span class="toggle-button__bar"></span>
-        <span class="toggle-button__bar"></span>
-        <span class="toggle-button__bar"></span>
-      </button>
-      
-    </div> -->
+
     <div class="mobile-header">
       <button class="toggle-button">
           <span class="toggle-button__bar"></span>
@@ -48,12 +46,12 @@
     <nav class="main-nav">
       <ul class="main-nav__items">
         <li class="main-nav__item">
-          <a href="../index.html">Хохяйство</a>
+          <a href="../index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="../customers/index.html">Обсуждения</a>
+          <a href="../customers/index.html">Документы СНТ</a>
         </li>
-        <!-- Changes 26.08.2021 - No Us-page but 'Food cathalog'-page -->
+
         <li class="main-nav__item">
           <a href="../us/index.html">Бухгалтерия</a>
         </li>
@@ -61,15 +59,11 @@
           <a href="../deliveries/index.html">Объявления / Реклама</a>
         </li>
         <li class="main-nav__item">
-          <a href="index.html">Голосования / Вакансии</a>
+          <a href="hr.html">Вопросы Председателю</a>
         </li>
         <li class="main-nav__item">
           <a href="../contacts/index.html">Контакты</a>
         </li>
-       
-        <!-- <li class="main-nav__item main-nav__item--cta">
-            <a href="start-hosting/index.html">Заказываем</a>
-        </li> -->
       </ul>
     </nav>
   </header>
@@ -78,13 +72,13 @@
     <button id='mob-menu__close' class=" btn-show">Закрыть</button>
     <ul class="mobile-nav__items">
       <li class="mobile-nav__item">
-        <a href="../index.html">Хозяйство</a>
+        <a href="../index.html">Главная</a>
       </li>
 
       <li class="mobile-nav__item">
-        <a href="../customers/index.html">Обсуждения</a>
+        <a href="../customers/index.html">Документы СНТ</a>
       </li>
-                    <!--  Changes 26.08.2021 - No Us-page but 'Food cathalog'-page -->
+
                     <li class="mobile-nav__item">
                       <a href="../us/index.html">Бухгалтерия</a>
                     </li>
@@ -92,106 +86,133 @@
         <a href="../deliveries/index.html">Объявления / Реклама</a>
       </li>
       <li class="mobile-nav__item">
-        <a href="hr/index.html">Голосования / Вакансии</a>
+        <a href="hr.html">Вопросы Председателю</a>
       </li> 
       <li class="mobile-nav__item">
         <a href="../contacts/index.html">Контакты</a>
-      </li>       
-</section>
-<main class="co-contacts">
-   <div class="co-info">
-    <h2>
-      СНТ «Венера»
-    </h2>
-    <h3>  Вакансии открыты:
-<div id="file1" class="file1">
-  <!-- <input type="file" id="positions" name="hrPositions.txt">
-  <textarea name="" id="" cols="30" rows="2"></textarea> -->
+      </li>  
+     </ul>
+  </nav>    
+    </section>
+<!-- MAIN starts -->
+
+<section class="co-contacts">
+
+  <!-- big image start  ============удален 18.05.2024=========
+  <div class="hr-image">
+   <img src="../images/4_1_HR_Proforientatsiya.png" alt="hr-positions-image">  
+  </div>
+  =======================================-->
+
+
+  <!-- image ends -->
+
+    <div class="co-info">
+ <div class="intro_hr"> 
+
+
+    <h3>Дорогие члены СНТ "Венера"! </h3>  
+    <h3>
+     На данной странице можно задать Ваш вопрос Председателю СНТ. 
+     Для этого надо заполнить форму и отослать её 
+      (она автоматически попадет на электронный адрес Председателя)
+     После заполнения формы нажмите на кнопку "Отправляю!".
+    </h3>  
+ </div>
+
+       
+   </div> 
+
+<!-- FORM STARTS============================================= -->
+<div class="show-hide_btns">
+
+  <button id="form-open_btn_id" class="form-open_btn">Заполнить анкету</button>
+  <!-- <i class="far fa-times-circle"></i> -->
+</div>
+<div class="form-hide_btn">
+  <button id="form-closer_btn_id" class="form-closer_btn"> Закрыть форму</button>
+  <!-- <i class="far fa-times-circle"></i> -->
 </div>
 
-      </h3>
-    <!-- <ul class="pos-list">
-      <li class="pos"> 
-        <a href="#" class="position"><span>Начальник отдела по работе с клиентами</span> <span class="tooltip-text"></span> </a>
-        </li>
-      <li class="pos">
-        <a href="#" class="position"><span>Старший менеджер по работе с клиентами</span></a>
-        
-       </li>
-      <li class="pos">
-        <a href="#" class="position"><span>Менеджер по работе с клиентами</span> </a>
-        
-      </li>
-        <li class="pos"><span></span> </li>
-      <li class="pos"><span></span></li>
+<div class="form-container">
 
-    </ul> -->
-    <!-- <table class="position-table">
-  <tr>
-    <th>Вакансия</th>
-    <th>Оклад</th>
-    
-  </tr>
-  <tr>
-    <td><a href="" class="">Начальник отдела по работе с клиентами</a> </td>
-    <td>50000.00</td>
-    
-  </tr>
-  <tr>
-    <td><a href="" class="">Старший менеджер по работе с клиентами</a></td>
-    <td>35000.00</td>
-  
-  </tr>
-</table> -->
-  <!-- </div> -->
-  <h3 class="form-h2">
-    Если Вас заинтересовала одна из открытых вакансий, -<br> заполните форму, мы обязательно свяжемся с Вами.
-  </h3>
-  <form id="cv-form" method="POST" action="https://formsubmit.co/051027a6ae96cc513404de09b360c696"  enctype="multipart/form-data">
-    <input type="hidden" name="_subject" value="Новый отклик на Вакансии!">
-    <input type="hidden" name="_cc" value="fecofi@mail.ru">
-    <!-- <fieldset id="fs-frm-inputs"> -->
-
-      <div class="form-name">
-<label for="full-name">ФИО</label>
-      <input type="text" name="name" id="full-name" placeholder="Фамилия Имя Отчество" required="">
-      </div>
-      <div class="email-address">
-        <label for="email-address">Электронный адрес</label>
-        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-      </div>
-      <!-- <div class="">
-        <label for="gender-male">Мужской</label>
-        <input type="radio">
-
-      </div>
-      <div class="">
-        <label for="gender-female">Женский</label>
-        <input type="radio">
-
-      </div> -->
-
-<div class="form-text">
-  <label for="message">Текстовое сообщение(позиция, на которую претендуете (из открытых вакансий или другую)опыт: лет, сферы , в которых опыт приобретен)</label>
-  <textarea rows="9" name="message" id="message" placeholder="Сопроводительное письмо" required=""></textarea>
-</div>
-<div class="cv-file">
-  <!-- <label for="file">Файл резюме</label> -->
-  <label for="file">Файл резюме</label>
-  <input type="file" name="attachment" accept="file_extention|.txt,.doc,.pdf">
-
-
-<small>Допустимые форматы для файла: *.txt,*.doc,*.docx,*.pdf</small>
-</div>
-      
-      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission / Отклик на вакансию">
-    </fieldset>
-    <input class="submit-btn" type="submit" value="Отправить">
-    <small>После того как нажмёте отправить -вам предложат подтвердить, что вы не робот. Если Вы не робот - поодтвердите.</small>
-  </form> 
 
  
-</main>
+      <form id="cv-form" method="POST" action="https://formsubmit.co/051027a6ae96cc513404de09b360c696"  enctype="multipart/form-data">
+
+    <div class="anketa-and-cancelbtn">
+
+
+<h2 class="anketa-form">Информация о члене СНТ</h2>
+<h4>......................................................</h4>
+
+    </div>
+        
+    <input type="hidden" name="_subject" value="Новый Вопрос!">
+    <input type="hidden" name="_cc" value="pl12004@mail.ru">
+     <input type="hidden" name="_cc" value="poteho.alexander@yandex.ru">   
+   
+    <!--FORM...GRID LAYOUT  -->
+    <div class="form-grid">
+  <label for="">Фамилия Имя Отчество</label>
+      <div class="form-name">
+
+      <input type="text" name="name" id="full-name" placeholder="Фамилия Имя Отчество" required="" >
+
+      </div>
+       <!--============================e - address nixed================================================
+  <label for="email">Электронный адрес(если имеется / не обязательно)</label>
+      <div class="email-address">
+
+        <input type="text" name="_replyto" id="email-address" placeholder="email@domain.tld" >
+          
+      </div>
+     ===================================address nixed!!!=========================================================-->
+        <label for=""> Ваш вопрос</label>
+      <div class="form-text">
+
+  <textarea rows="9" name="message" id="message" placeholder="Номер участка - и далее Ваш вопрос"></textarea>
+
+
+  
+</div>
+       <!--=====================================документы  и фото исключены=====================================================
+  <label for="file">Файл - документ, фото, аналогичное(не обязательно)</label>
+<div class="cv-file">
+
+  <input type="file" name="attachment" accept=".doc,.docx,.xls,.xlsx,.rtf,.pdf" >
+
+
+<small>Допустимые форматы для файла: doc,docx,xls,xlsx,rtf или pdf</small>
+</div>
+  <label for="file">Фото - дополнительно (при необходимости - не обязательно)</label>
+<div class="cv-photo_file">
+  <input type="file" name="attachment" accept=".jpeg,.jpg,.tiff,.psd,.bmp,.gif,.png">
+<div class="">
+  <small>Допустимые форматы для файла: jpeg,jpg,tiff,psd,bmp,gif,png</small>  
+</div>
+
+</div>
+ ======================================доки и фотоисключены========================================================-->
+ <div class="">
+
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission / Новый вопрос Председателю СНТ или в Правление СНТ">
+
+    <input class="submit-btn" type="submit" value="Отправляю!">  
+ </div>     
+
+
+    <small class="small-robot">После того как нажмёте отправить -вам предложат подтвердить, что вы не робот. Если Вы не робот - подтвердите.</small>      
+    </div>
+
+
+  </form> 
+  </div> 
+  <!-- Form Ends ===============Form Ends==========================-->
+
+ 
+</section>
+
 <footer class="footer">
   <div class="Flag icon">
 <a href="#">RF flag icon</a>
@@ -200,31 +221,37 @@
     <a href="#">Российская Федерация</a>
   
   </div>
-  <div class="Newsletter">
-    <a href="#">Новости</a>
-  </div>
-      <div class="Help">
-    <a href="#">Помощь</a>
+ <div class="RF">
+        <a href="#">Тревожная кнопка</a>
+      
       </div>
-  <div class="Store">
-    <a href="#">Магазин</a>
-     </div>
-  <div class="Following">
-    <a href="#">Следите за нами</a>
+      <div class="Newsletter">
+        <a href="#">Новости</a>
+      </div>
+      <div class="Help">
+        <a href="#">Документы СНТ</a>
+      </div>
+      <div class="Store">
+        <a href="#"></a>
+      </div>
+      <div class="Following">
+        <a href="#">Бухгалтерия</a>
 
-  </div>
-  <div class="legal-use">
-    <a href="#">Условия пользования</a>
-    </div>
-  <div class="Vacancies">
-    <a href="#">Вакансии</a>
-    </div>
-  <div class="site-map">
-    <a href="#">Карта сайта</a>
-
-  </div>
+      </div>
+      <div class="legal-use">
+        <a href="#">Объявления</a>
+      </div>
+      <div class="Vacancies">
+        <a href="../hr/hr.html">Вопрос Председателю и Правлению</a>
+      </div>
+      <div class="site-map">
+        <a href="#">Контакты</a>
+    
+      </div>
 </footer>
+
 <script src="../script.js"></script>
-<script src="hr.js"></script>
+<script src="hr5.js"></script>
 </body>
 </html>
+

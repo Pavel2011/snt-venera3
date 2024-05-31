@@ -141,7 +141,7 @@ caption{
 
 .footer{
   /* position: ; */
-  /* top: 175rem; */
+top: 175rem;  /*  */
   bottom: 0;
   height: 3rem;
  

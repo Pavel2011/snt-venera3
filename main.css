@@ -219,7 +219,7 @@ h2 {
 .first-section {
   /* position: relative; */
   font-family: 'Oswald', sans-serif;
-  top: 11rem;
+  top: 10rem;
   margin-top: 1rem;
 
   left: 0;
@@ -242,12 +242,12 @@ h2 {
 /*main picture section*/
 .first-section__div {
    width: 100vw; /* ======15.05.2024 - SNT========  */
-  height: 30rem;/*37rem, 47rem
+  /*height: 30rem;===37rem, 47rem */
   /* margin-top: 2.5rem; */
   /* display: block; */
 }
 .first-section__div img {
-  width: 90%;
+  width: 98%;
   /* height: 47rem; */
   margin: 0;
   object-fit: cover;
@@ -336,7 +336,7 @@ img:hover {
   display: flex;
   flex-direction: column;
 }
-/* ==========prod-row GRID================START===================== */
+/* ==========prod-row GRID==========color: blueviolet;======START===================== */
 .prod-row {
   /* height: 35rem; */
   width: 100vw;
@@ -356,7 +356,7 @@ img:hover {
   align-items: stretch;
   justify-items: stretch;
   font-size: 1.2rem;
-  color: blueviolet;
+   color: #480303c4;
   text-align: center;
   /* border: 1px solid rgb(234, 232, 228); */
   /*border-left: none;

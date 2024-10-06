@@ -687,7 +687,8 @@ background-color: rgb(40, 61, 156);
     width: 95%;
     height: auto;
     object-fit: cover;
-    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
   }
 .prod-row-art h2{
   width: 99%;

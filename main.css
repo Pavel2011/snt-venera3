@@ -425,6 +425,7 @@ background-color: rgb(40, 61, 156);
   width: 30rem;
   height: 19rem;
   object-fit: contain;
+  overflow: hidden;
 }
 
 /* .prod-row-art.office-location :hover,
